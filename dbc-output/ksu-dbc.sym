@@ -1,0 +1,306 @@
+FormatVersion=6.0 // Do not edit this line!
+Title="SYM Database"
+
+
+
+{SIGNALS}
+Sig="APPS1" unsigned 16 /f:0.001220703125 /max:12 /min:0
+Sig="APPS2" unsigned 16 /f:0.001220703125 /max:12 /min:0
+Sig="BSE1" unsigned 16 /f:0.001220703125 /max:12 /min:0
+Sig="STEERING" unsigned 16 /f:0.001220703125 /max:12 /min:0
+Sig="RPM_FL" unsigned 32 /f:0.01 /max:4294967296 /min:0
+Sig="RPM_FR" unsigned 32 /f:0.01 /max:4294967296 /min:0
+Sig="SHUTDOWN_STATES" unsigned 8 /max:255 /min:0
+Sig="PEDAL_STATES" unsigned 8 /max:255 /min:0
+Sig="ECU_STATES" unsigned 8 /max:255 /min:0
+Sig="MAX_TORQUE" unsigned 8 /max:255 /min:0
+Sig="TORQUE_MODE" unsigned 8 /max:255 /min:0
+Sig="DISTANCE_TRAVELLED" unsigned 16 /max:65535 /min:0
+Sig="fw_version" unsigned 32
+Sig="dash_button1status" unsigned 1
+Sig="dash_button2status" unsigned 1
+Sig="dash_button3status" unsigned 1
+Sig="dash_button4status" unsigned 1
+Sig="dash_button5status" unsigned 1
+Sig="dash_button6status" unsigned 1
+Sig="cell1temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell2temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell3temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell4temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell5temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell6temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp1to6" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp1to6" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell7temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell8temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell9temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell10temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell11temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell12temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp7to12" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp7to12" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell13temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell14temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell15temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell16temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell17temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell18temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp13to18" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp13to18" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell19temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell20temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell21temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell22temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell23temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell24temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp19to24" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp19to24" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell25temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell26temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell27temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell28temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell29temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell30temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp25to30" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp25to30" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell31temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell32temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell33temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell34temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell35temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell36temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp31to36" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp31to36" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell37temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell38temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell39temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell40temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell41temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell42temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp37to42" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp37to42" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell43temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell44temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell45temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell46temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell47temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell48temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp43to48" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp43to48" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell49temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell50temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell51temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell52temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell53temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell54temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp49to54" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp49to54" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell55temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell56temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell57temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell58temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell59temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell60temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp55to60" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp55to60" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell61temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell62temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell63temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell64temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell65temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell66temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp61to66" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp61to66" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell67temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell68temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell69temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell70temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell71temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="cell72temp" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="mintemp67to72" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+Sig="maxtemp67to72" unsigned 8 /f:0.019607 /max:5.0 /min:0.0
+
+{SENDRECEIVE}
+["VCU_PEDAL_READINGS"]
+ID=0C4h // VCU analog pedal readings
+Len=8
+Sig="APPS1" 0
+Sig="APPS2" 16
+Sig="BSE1" 32
+Sig="STEERING" 48
+
+["VCU_STATUS"]
+ID=0C3h
+Len=7
+Sig="SHUTDOWN_STATES" 0
+Sig="PEDAL_STATES" 8
+Sig="ECU_STATES" 16
+Sig="MAX_TORQUE" 24
+Sig="TORQUE_MODE" 32
+Sig="DISTANCE_TRAVELLED" 40
+
+["VCU_WHEELSPEED_READINGS"]
+ID=0C6h // VCU wheel speed sensor readings
+Len=8
+Sig="RPM_FL" 0
+Sig="RPM_FR" 32
+
+["dash_buttons"]
+ID=0EBh // commit hash of the firmware on the VCU
+Len=8
+Sig="dash_button1status" 0
+Sig="dash_button2status" 1
+Sig="dash_button3status" 2
+Sig="dash_button4status" 3
+Sig="dash_button5status" 4
+Sig="dash_button6status" 5
+
+["segment1_temps1"]
+ID=01Ah // raw ADC voltage reading of module1 cells 1-6
+Len=8
+Sig="cell1temp" 0
+Sig="cell2temp" 8
+Sig="cell3temp" 16
+Sig="cell4temp" 24
+Sig="cell5temp" 32
+Sig="cell6temp" 40
+Sig="mintemp1to6" 48
+Sig="maxtemp1to6" 56
+
+["segment1_temps2"]
+ID=01Bh // raw ADC voltage reading of module1 cells 6-12
+Len=8
+Sig="cell7temp" 0
+Sig="cell8temp" 8
+Sig="cell9temp" 16
+Sig="cell10temp" 24
+Sig="cell11temp" 32
+Sig="cell12temp" 40
+Sig="mintemp7to12" 48
+Sig="maxtemp7to12" 56
+
+["segment2_temps1"]
+ID=02Ah // raw ADC voltage reading of module2 cells 1-6
+Len=8
+Sig="cell13temp" 0
+Sig="cell14temp" 8
+Sig="cell15temp" 16
+Sig="cell16temp" 24
+Sig="cell17temp" 32
+Sig="cell18temp" 40
+Sig="mintemp13to18" 48
+Sig="maxtemp13to18" 56
+
+["segment2_temps2"]
+ID=02Bh // raw ADC voltage reading of module2 cells 6-12
+Len=8
+Sig="cell19temp" 0
+Sig="cell20temp" 8
+Sig="cell21temp" 16
+Sig="cell22temp" 24
+Sig="cell23temp" 32
+Sig="cell24temp" 40
+Sig="mintemp19to24" 48
+Sig="maxtemp19to24" 56
+
+["segment3_temps1"]
+ID=03Ah // raw ADC voltage reading of module3 cells 1-6
+Len=8
+Sig="cell25temp" 0
+Sig="cell26temp" 8
+Sig="cell27temp" 16
+Sig="cell28temp" 24
+Sig="cell29temp" 32
+Sig="cell30temp" 40
+Sig="mintemp25to30" 48
+Sig="maxtemp25to30" 56
+
+["segment3_temps2"]
+ID=03Bh // raw ADC voltage reading of module3 cells 6-12
+Len=8
+Sig="cell31temp" 0
+Sig="cell32temp" 8
+Sig="cell33temp" 16
+Sig="cell34temp" 24
+Sig="cell35temp" 32
+Sig="cell36temp" 40
+Sig="mintemp31to36" 48
+Sig="maxtemp31to36" 56
+
+["segment4_temps1"]
+ID=04Ah // raw ADC voltage reading of module4 cells 1-6
+Len=8
+Sig="cell37temp" 0
+Sig="cell38temp" 8
+Sig="cell39temp" 16
+Sig="cell40temp" 24
+Sig="cell41temp" 32
+Sig="cell42temp" 40
+Sig="mintemp37to42" 48
+Sig="maxtemp37to42" 56
+
+["segment4_temps2"]
+ID=04Bh // raw ADC voltage reading of module4 cells 6-12
+Len=8
+Sig="cell43temp" 0
+Sig="cell44temp" 8
+Sig="cell45temp" 16
+Sig="cell46temp" 24
+Sig="cell47temp" 32
+Sig="cell48temp" 40
+Sig="mintemp43to48" 48
+Sig="maxtemp43to48" 56
+
+["segment5_temps1"]
+ID=05Ah // raw ADC voltage reading of module5 cells 1-6
+Len=8
+Sig="cell49temp" 0
+Sig="cell50temp" 8
+Sig="cell51temp" 16
+Sig="cell52temp" 24
+Sig="cell53temp" 32
+Sig="cell54temp" 40
+Sig="mintemp49to54" 48
+Sig="maxtemp49to54" 56
+
+["segment5_temps2"]
+ID=05Bh // raw ADC voltage reading of module5 cells 6-12
+Len=8
+Sig="cell55temp" 0
+Sig="cell56temp" 8
+Sig="cell57temp" 16
+Sig="cell58temp" 24
+Sig="cell59temp" 32
+Sig="cell60temp" 40
+Sig="mintemp55to60" 48
+Sig="maxtemp55to60" 56
+
+["segment6_temps1"]
+ID=06Ah // raw ADC voltage reading of module6 cells 1-6
+Len=8
+Sig="cell61temp" 0
+Sig="cell62temp" 8
+Sig="cell63temp" 16
+Sig="cell64temp" 24
+Sig="cell65temp" 32
+Sig="cell66temp" 40
+Sig="mintemp61to66" 48
+Sig="maxtemp61to66" 56
+
+["segment6_temps2"]
+ID=06Bh // raw ADC voltage reading of module6 cells 6-12
+Len=8
+Sig="cell67temp" 0
+Sig="cell68temp" 8
+Sig="cell69temp" 16
+Sig="cell70temp" 24
+Sig="cell71temp" 32
+Sig="cell72temp" 40
+Sig="mintemp67to72" 48
+Sig="maxtemp67to72" 56
+
+["vcu_firmware_version"]
+ID=0C8h // commit hash of the firmware on the VCU
+Len=4
+Sig="fw_version" 0
+

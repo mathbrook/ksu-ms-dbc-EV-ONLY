@@ -1,0 +1,338 @@
+{
+    "messages": {
+        "MSGID_0X6B1": {
+            "id": 1713,
+            "length": 8,
+            "signals": [
+                "Pack_DCL",
+                "Pack_CCL",
+                "High_Temperature",
+                "Low_Temperature",
+                "Average_Temperature",
+                "CRC_Checksum"
+            ],
+            "comment": "This ID Transmits at 104 ms.",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": [
+                "BMS"
+            ]
+        },
+        "MSGID_0X6B2": {
+            "id": 1714,
+            "length": 8,
+            "signals": [
+                "Pack_Current",
+                "Pack_Open_Voltage",
+                "Pack_Inst_Voltage",
+                "Pack_Summed_Voltage"
+            ],
+            "comment": "This ID Transmits at 48 ms.",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": [
+                "BMS"
+            ]
+        },
+        "MSGID_0X6B3": {
+            "id": 1715,
+            "length": 8,
+            "signals": [
+                "Pack_SOC",
+                "Blank1",
+                "Blank2",
+                "Blank3",
+                "Blank4",
+                "Blank5",
+                "Blank6"
+            ],
+            "comment": "This ID Transmits at 1008 ms.",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": [
+                "BMS"
+            ]
+        }
+    },
+    "signals": [
+        {
+            "name": "Pack_DCL",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Amps",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Pack_CCL",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Amps",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "High_Temperature",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Celsius",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Low_Temperature",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Celsius",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Average_Temperature",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Celsius",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "CRC_Checksum",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Pack_Current",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": null,
+            "units": "Amps",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Pack_Open_Voltage",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Volts",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Pack_Inst_Voltage",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Volts",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Pack_Summed_Voltage",
+            "start": 48,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Volts",
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Pack_SOC",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": "Percent",
+            "conversion": {
+                "scale": 0.5,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Blank1",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Blank2",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Blank3",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Blank4",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Blank5",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "Blank6",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        }
+    ]
+}

@@ -1,0 +1,6188 @@
+{
+    "messages": {
+        "megasquirt_gp50": {
+            "id": 1570,
+            "length": 8,
+            "signals": [
+                "map_accel",
+                "total_accel",
+                "launch_timer",
+                "launch_retard"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp63": {
+            "id": 1583,
+            "length": 8,
+            "signals": [
+                "generic_pid_duty1",
+                "generic_pid_duty2",
+                "spare63_1",
+                "spare63_2",
+                "spare63_3"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp62": {
+            "id": 1582,
+            "length": 8,
+            "signals": [
+                "gps_west",
+                "gps_altk",
+                "gps_altm",
+                "gps_speed",
+                "gps_course"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp61": {
+            "id": 1581,
+            "length": 8,
+            "signals": [
+                "gps_latdeg",
+                "gps_latmin",
+                "gps_latmmin",
+                "gps_londeg",
+                "gps_lonmin",
+                "gps_lonmmin"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp60": {
+            "id": 1580,
+            "length": 8,
+            "signals": [
+                "launch_timing",
+                "step3_timing",
+                "vsslaunch_retard",
+                "cel_status2"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp59": {
+            "id": 1579,
+            "length": 8,
+            "signals": [
+                "revlim_retard",
+                "als_timing",
+                "ext_advance",
+                "deadtime1"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp58": {
+            "id": 1578,
+            "length": 8,
+            "signals": [
+                "adv1",
+                "adv2",
+                "adv3",
+                "adv4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp57": {
+            "id": 1577,
+            "length": 8,
+            "signals": [
+                "base_advance",
+                "idle_cor_advance",
+                "mat_retard",
+                "flex_advance"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp56": {
+            "id": 1576,
+            "length": 8,
+            "signals": [
+                "tc_retard",
+                "cel_retard",
+                "fc_retard",
+                "als_addfuel"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp55": {
+            "id": 1575,
+            "length": 8,
+            "signals": [
+                "looptime",
+                "fueltemp_cor",
+                "fuelpress_cor",
+                "ltt_cor",
+                "sp1"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp54": {
+            "id": 1574,
+            "length": 8,
+            "signals": [
+                "batt_cur",
+                "cel_status",
+                "fp_duty",
+                "alt_duty",
+                "load_duty",
+                "alt_targv"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp53": {
+            "id": 1573,
+            "length": 8,
+            "signals": [
+                "fuel_press1",
+                "fuel_press2",
+                "fuel_temp1",
+                "fuel_temp2"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp52": {
+            "id": 1572,
+            "length": 8,
+            "signals": [
+                "canin1",
+                "canin2",
+                "canout",
+                "knk_rtd",
+                "fuelflow",
+                "fuelcons"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp51": {
+            "id": 1571,
+            "length": 8,
+            "signals": [
+                "porta",
+                "portb",
+                "porteh",
+                "portk",
+                "portmj",
+                "portp",
+                "portt",
+                "cel_errorcode"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp49": {
+            "id": 1569,
+            "length": 8,
+            "signals": [
+                "knock_cyl9",
+                "knock_cyl10",
+                "knock_cyl11",
+                "knock_cyl12",
+                "knock_cyl13",
+                "knock_cyl14",
+                "knock_cyl15",
+                "knock_cyl16"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp48": {
+            "id": 1568,
+            "length": 8,
+            "signals": [
+                "knock_cyl1",
+                "knock_cyl2",
+                "knock_cyl3",
+                "knock_cyl4",
+                "knock_cyl5",
+                "knock_cyl6",
+                "knock_cyl7",
+                "knock_cyl8"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp47": {
+            "id": 1567,
+            "length": 8,
+            "signals": [
+                "fuel_pct",
+                "tps_accel",
+                "SS1",
+                "SS2"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp46": {
+            "id": 1566,
+            "length": 8,
+            "signals": [
+                "vvt_duty1",
+                "vvt_duty2",
+                "vvt_duty3",
+                "vvt_duty4",
+                "inj_timing_pri",
+                "inj_timing_sec"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp45": {
+            "id": 1565,
+            "length": 8,
+            "signals": [
+                "vvt_target1",
+                "vvt_target2",
+                "vvt_target3",
+                "vvt_target4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp44": {
+            "id": 1564,
+            "length": 8,
+            "signals": [
+                "vvt_ang1",
+                "vvt_ang2",
+                "vvt_ang3",
+                "vvt_ang4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp43": {
+            "id": 1563,
+            "length": 8,
+            "signals": [
+                "synccnt",
+                "syncreason",
+                "sd_filenum",
+                "sd_error",
+                "sd_phase",
+                "sd_status",
+                "timing_err"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp42": {
+            "id": 1562,
+            "length": 8,
+            "signals": [
+                "VSS1",
+                "VSS2",
+                "VSS3",
+                "VSS4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp39": {
+            "id": 1559,
+            "length": 8,
+            "signals": [
+                "EGOcor5",
+                "EGOcor6",
+                "EGOcor7",
+                "EGOcor8"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp41": {
+            "id": 1561,
+            "length": 8,
+            "signals": [
+                "EGOcor13",
+                "EGOcor14",
+                "EGOcor15",
+                "EGOcor16"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp40": {
+            "id": 1560,
+            "length": 8,
+            "signals": [
+                "EGOcor9",
+                "EGOcor10",
+                "EGOcor11",
+                "EGOcor12"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp38": {
+            "id": 1558,
+            "length": 8,
+            "signals": [
+                "EGOcor1",
+                "EGOcor2",
+                "EGOcor3",
+                "EGOcor4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp37": {
+            "id": 1557,
+            "length": 8,
+            "signals": [
+                "EGOv13",
+                "EGOv14",
+                "EGOv15",
+                "EGOv16"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp36": {
+            "id": 1556,
+            "length": 8,
+            "signals": [
+                "EGOv9",
+                "EGOv10",
+                "EGOv11",
+                "EGOv12"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp35": {
+            "id": 1555,
+            "length": 8,
+            "signals": [
+                "EGOv5",
+                "EGOv6",
+                "EGOv7",
+                "EGOv8"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp34": {
+            "id": 1554,
+            "length": 8,
+            "signals": [
+                "EGOv1",
+                "EGOv2",
+                "EGOv3",
+                "EGOv4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp33": {
+            "id": 1553,
+            "length": 8,
+            "signals": [
+                "duty_pwm1",
+                "duty_pwm2",
+                "duty_pwm3",
+                "duty_pwm4",
+                "duty_pwm5",
+                "duty_pwm6",
+                "gear",
+                "status8"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp32": {
+            "id": 1552,
+            "length": 8,
+            "signals": [
+                "AFR9",
+                "AFR10",
+                "AFR11",
+                "AFR12",
+                "AFR13",
+                "AFR14",
+                "AFR15",
+                "AFR16"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp31": {
+            "id": 1551,
+            "length": 8,
+            "signals": [
+                "AFR1",
+                "AFR2",
+                "AFR3",
+                "AFR4",
+                "AFR5",
+                "AFR6",
+                "AFR7",
+                "AFR8"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp30": {
+            "id": 1550,
+            "length": 8,
+            "signals": [
+                "accelx",
+                "accely",
+                "accelz",
+                "stream_level",
+                "water_duty"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp29": {
+            "id": 1549,
+            "length": 8,
+            "signals": [
+                "EAEfcor1",
+                "EAEfcor2",
+                "VSS1dot",
+                "VSS2dot"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp28": {
+            "id": 1548,
+            "length": 8,
+            "signals": [
+                "cl_idle_targ_rpm",
+                "tpsadc",
+                "eaeload",
+                "afrload"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp27": {
+            "id": 1547,
+            "length": 8,
+            "signals": [
+                "canpwmin1",
+                "canpwmin2",
+                "canpwmin3",
+                "canpwmin4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp26": {
+            "id": 1546,
+            "length": 8,
+            "signals": [
+                "nitrous1_duty",
+                "nitrous2_duty",
+                "nitrous_timer_out",
+                "n2o_addfuel",
+                "n2o_retard"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp25": {
+            "id": 1545,
+            "length": 8,
+            "signals": [
+                "egt13",
+                "egt14",
+                "egt15",
+                "egt16"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp24": {
+            "id": 1544,
+            "length": 8,
+            "signals": [
+                "egt9",
+                "egt10",
+                "egt11",
+                "egt12"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp23": {
+            "id": 1543,
+            "length": 8,
+            "signals": [
+                "egt5",
+                "egt6",
+                "egt7",
+                "egt8"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp22": {
+            "id": 1542,
+            "length": 8,
+            "signals": [
+                "egt1",
+                "egt2",
+                "egt3",
+                "egt4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp21": {
+            "id": 1541,
+            "length": 8,
+            "signals": [
+                "pwseq13",
+                "pwseq14",
+                "pwseq15",
+                "pwseq16"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp20": {
+            "id": 1540,
+            "length": 8,
+            "signals": [
+                "pwseq9",
+                "pwseq10",
+                "pwseq11",
+                "pwseq12"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp19": {
+            "id": 1539,
+            "length": 8,
+            "signals": [
+                "pwseq5",
+                "pwseq6",
+                "pwseq7",
+                "pwseq8"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp18": {
+            "id": 1538,
+            "length": 8,
+            "signals": [
+                "pwseq1",
+                "pwseq2",
+                "pwseq3",
+                "pwseq4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp17": {
+            "id": 1537,
+            "length": 8,
+            "signals": [
+                "boost_targ_1",
+                "boost_targ_2",
+                "boostduty",
+                "boostduty2",
+                "maf_volts"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp16": {
+            "id": 1536,
+            "length": 8,
+            "signals": [
+                "sensors13",
+                "sensors14",
+                "sensors15",
+                "sensors16"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp15": {
+            "id": 1535,
+            "length": 8,
+            "signals": [
+                "sensors9",
+                "sensors10",
+                "sensors11",
+                "sensors12"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp14": {
+            "id": 1534,
+            "length": 8,
+            "signals": [
+                "sensors5",
+                "sensors6",
+                "sensors7",
+                "sensors8"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp13": {
+            "id": 1533,
+            "length": 8,
+            "signals": [
+                "sensors1",
+                "sensors2",
+                "sensors3",
+                "sensors4"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp12": {
+            "id": 1532,
+            "length": 8,
+            "signals": [
+                "wallfuel1",
+                "wallfuel2"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp11": {
+            "id": 1531,
+            "length": 8,
+            "signals": [
+                "fuelload2",
+                "ignload",
+                "ignload2",
+                "airtemp"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp10": {
+            "id": 1530,
+            "length": 8,
+            "signals": [
+                "status1",
+                "status2",
+                "status3",
+                "status4",
+                "status5",
+                "status6",
+                "status7"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp9": {
+            "id": 1529,
+            "length": 8,
+            "signals": [
+                "egoV1",
+                "egoV2",
+                "dwell",
+                "dwell_trl"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp8": {
+            "id": 1528,
+            "length": 8,
+            "signals": [
+                "MAFload",
+                "fuelload",
+                "fuelcor",
+                "MAF"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp7": {
+            "id": 1527,
+            "length": 8,
+            "signals": [
+                "cold_adv_deg",
+                "TPSdot",
+                "MAPdot",
+                "RPMdot"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp6": {
+            "id": 1526,
+            "length": 8,
+            "signals": [
+                "totalcor",
+                "ve1",
+                "ve2",
+                "iacstep"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp5": {
+            "id": 1525,
+            "length": 8,
+            "signals": [
+                "warmcor",
+                "tpsaccel",
+                "tpsfuelcut",
+                "barocor"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp4": {
+            "id": 1524,
+            "length": 8,
+            "signals": [
+                "knock",
+                "egocor1",
+                "egocor2",
+                "aircor"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp3": {
+            "id": 1523,
+            "length": 8,
+            "signals": [
+                "tps",
+                "batt",
+                "afr1_old",
+                "afr2_old"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp2": {
+            "id": 1522,
+            "length": 8,
+            "signals": [
+                "baro",
+                "map",
+                "mat",
+                "clt"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp1": {
+            "id": 1521,
+            "length": 8,
+            "signals": [
+                "adv_deg",
+                "squirt",
+                "engine",
+                "afrtgt1",
+                "afrtgt2",
+                "wbo2_en1",
+                "wbo2_en2"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "megasquirt_gp0": {
+            "id": 1520,
+            "length": 8,
+            "signals": [
+                "seconds",
+                "pw1",
+                "pw2",
+                "rpm"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        }
+    },
+    "signals": [
+        {
+            "name": "map_accel",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "MAPdot based accel",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "total_accel",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Total accel",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "launch_timer",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Timer for timed-launch retard",
+            "units": "s",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "launch_retard",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Launch retard",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "generic_pid_duty1",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Generic closed-loop duty 1",
+            "units": "%",
+            "conversion": {
+                "scale": 0.392,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "generic_pid_duty2",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Generic closed-loop duty 2",
+            "units": "%",
+            "conversion": {
+                "scale": 0.392,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "spare63_1",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "spare63_2",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "spare63_3",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_west",
+            "start": 0,
+            "length": 1,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "GPS longitude west indicator bit (gps_outstatus)",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_altk",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "GPS altitude (km)",
+            "units": "km",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_altm",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "GPS altitude (m)",
+            "units": "m",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_speed",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "GPS speed",
+            "units": "m/s",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_course",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "GPS course (heading)",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_latdeg",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "GPS latitude degrees",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_latmin",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "GPS latitude minutes",
+            "units": "min",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_latmmin",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "GPS latitude milli-minutes",
+            "units": "mmin",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_londeg",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "GPS longitude degrees",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_lonmin",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "GPS longitude minutes",
+            "units": "min",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gps_lonmmin",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "GPS longitude milli-minutes",
+            "units": "mmin",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "launch_timing",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Launch control timing",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "step3_timing",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "3-step timing",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vsslaunch_retard",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Wheel-speed based launch retard",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cel_status2",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CEL status bitfield 2",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "revlim_retard",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Rev-limiter 'soft' retard",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "als_timing",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "ALS timing change",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "ext_advance",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "External advance (e.g. trans)",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "deadtime1",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Injector deadtime in use (#1)",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "adv1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Timing lookup from table 1",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "adv2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Timing lookup from table 2",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "adv3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Timing lookup from table 3",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "adv4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Timing lookup from table 4",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "base_advance",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Base timing from tables",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "idle_cor_advance",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Idle correction advance",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mat_retard",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "MAT retard",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "flex_advance",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Flex advance",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "tc_retard",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Traction control retard",
+            "units": "def",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cel_retard",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "CEL retard",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fc_retard",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Fuel-cut (overrun) retard",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "als_addfuel",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "ALS added fuel",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "looptime",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Main code loop execution time",
+            "units": "us",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fueltemp_cor",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Fuel temperature correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuelpress_cor",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Fuel pressure correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "ltt_cor",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Long term trim correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sp1",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Unused",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "batt_cur",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Battery current (alternator system)",
+            "units": null,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cel_status",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CEL status bitfield 1",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fp_duty",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Fuel pump output duty",
+            "units": "%",
+            "conversion": {
+                "scale": 0.392,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "alt_duty",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Alternator field output duty",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "load_duty",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Alternator measured load-sense duty",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "alt_targv",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Alternator target voltage",
+            "units": "V",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuel_press1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Fuel pressure 1",
+            "units": "kPa",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuel_press2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Fuel pressure 2",
+            "units": "kPa",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuel_temp1",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Fuel temperature 1",
+            "units": "deg F",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuel_temp2",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Fuel temperature 2",
+            "units": "deg F",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "canin1",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CAN input 1 bitfield (CAN port 1 on MS2)",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "canin2",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CAN input 2 bitfield (CAN port 2 on MS2)",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "canout",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CAN output 1 bitfield (CAN port 3 on MS2)",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knk_rtd",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock retard",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuelflow",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Average fuel flow",
+            "units": "cc/min",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuelcons",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Average fuel consumption",
+            "units": "l/km",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "porta",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CPU portA bitfield",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "portb",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CPU portB bitfield",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "porteh",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CPU portE/portH bitfield",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "portk",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CPU portK bitfield",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "portmj",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CPU portM/portJ bitfield",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "portp",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CPU portP bitfield",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "portt",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CPU portT bitfield",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cel_errorcode",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "CEL error code",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl9",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #9",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl10",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #10",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl11",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #11",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl12",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #12",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl13",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #13",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl14",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #14",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl15",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #15",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl16",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #16",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl1",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #1",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl2",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #2",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl3",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #3",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl4",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #4",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl5",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #5",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl6",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #6",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl7",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #7",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock_cyl8",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Knock % cyl #8",
+            "units": "%",
+            "conversion": {
+                "scale": 0.4,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuel_pct",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Ethanol content of fuel from Flex sensor",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "tps_accel",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "TPSdot based accel",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "SS1",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Shaft Speed 1",
+            "units": "RPM",
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "SS2",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Shaft Speed 2",
+            "units": "RPM",
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_duty1",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VVT solenoid duty cycle 1",
+            "units": "%",
+            "conversion": {
+                "scale": 0.392,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_duty2",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VVT solenoid duty cycle 2",
+            "units": "%",
+            "conversion": {
+                "scale": 0.392,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_duty3",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VVT solenoid duty cycle 3",
+            "units": "%",
+            "conversion": {
+                "scale": 0.392,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_duty4",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VVT solenoid duty cycle 4",
+            "units": "%",
+            "conversion": {
+                "scale": 0.392,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "inj_timing_pri",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Injection Timing Angle (Primary)",
+            "units": "deg BTDC",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "inj_timing_sec",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Injection Timing Angle (Secondary)",
+            "units": "deg BTDC",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_target1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VVT target angle 1",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_target2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VVT target angle 2",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_target3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VVT target angle 3",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_target4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VVT target angle 4",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_ang1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VVT actual angle 1",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_ang2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VVT actual angle 2",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_ang3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VVT actual angle 3",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "vvt_ang4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VVT actual angle 4",
+            "units": "deg",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "synccnt",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Sync-loss counter",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "syncreason",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Sync-loss reason code",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sd_filenum",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "SDcard file number",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sd_error",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "SDcard error number",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sd_phase",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "SDcard internal code",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sd_status",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "SDcard status bitfield",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "timing_err",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Calculated error in ignition timing",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VSS1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Vehicle speed 1",
+            "units": "m/s",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VSS2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Vehicle speed 2",
+            "units": "m/s",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VSS3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Vehicle speed 3",
+            "units": "m/s",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VSS4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Vehicle speed 4",
+            "units": "m/s",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor5",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#5",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor6",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#6",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor7",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#7",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor8",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#8",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor13",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#13",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor14",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#14",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor15",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#15",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor16",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#16",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor9",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#9",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor10",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#10",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor11",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#11",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor12",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#12",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#1",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#2",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#3",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOcor4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO correction cyl#4",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv13",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #13",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv14",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #14",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv15",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #15",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv16",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #16",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv9",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #9",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv10",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #10",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv11",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #11",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv12",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #12",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv5",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #5",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv6",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #6",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv7",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #7",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv8",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #8",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #1",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #2",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #3",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EGOv4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Voltage from O2 cyl #4",
+            "units": "V",
+            "conversion": {
+                "scale": 0.00489,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "duty_pwm1",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Generic PWM duty 1",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "duty_pwm2",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Generic PWM duty 2",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "duty_pwm3",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Generic PWM duty 3",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "duty_pwm4",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Generic PWM duty 4",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "duty_pwm5",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Generic PWM duty 5",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "duty_pwm6",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Generic PWM duty 6",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "gear",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Current gear selected",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "status8",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "ECU status bitfield 8",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR9",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #9",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR10",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #10",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR11",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #11",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR12",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #12",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR13",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #13",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR14",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #14",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR15",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #15",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR16",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #16",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR1",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #1",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR2",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #2",
+            "units": null,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR3",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #3",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR4",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #4",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR5",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #5",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR6",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #6",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR7",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #7",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "AFR8",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "AFR cyl #8",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "accelx",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "External accelerometer X",
+            "units": "m/s^2",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "accely",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "External accelerometer Y",
+            "units": "m/s^2",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "accelz",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "External accelerometer Z",
+            "units": "m/s^2",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "stream_level",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Volume level on audio input",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "water_duty",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Duty cycle to water injection solenoid",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EAEfcor1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Fuel correction from EAE - channel 1",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "EAEfcor2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Fuel correction from EAE - channel 2",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VSS1dot",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Rate of change of VSS1",
+            "units": "m/s^2",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VSS2dot",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Rate of change of VSS2",
+            "units": "m/s^2",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cl_idle_targ_rpm",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Closed-loop idle target RPM",
+            "units": "RPM",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "tpsadc",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "ADC count from TPS",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "eaeload",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "'Load' used for EAE calc",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "afrload",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "'Load' used for AFR table lookups",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "canpwmin1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "PWM period 1 from remote board",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "canpwmin2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "PWM period 2 from remote board",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "canpwmin3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "PWM period 3 from remote board",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "canpwmin4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "PWM period 4 from remote board",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "nitrous1_duty",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Duty cycle to nitrous solenoid 1",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "nitrous2_duty",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Duty cycle to nitrous solenoid 2",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "nitrous_timer_out",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Timer used internally for nitrous system",
+            "units": "s",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "n2o_addfuel",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Fuel pulsewidth added due to nitrous system",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "n2o_retard",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Timing retard due to nitrous system",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt13",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #13",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt14",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #14",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt15",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #15",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt16",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #16",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt9",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #9",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt10",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #10",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt11",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #11",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt12",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #12",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt5",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #5",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt6",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #6",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt7",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #7",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt8",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #8",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #1",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #2",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #3",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egt4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGT cyl #4",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq13",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #13",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq14",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #14",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq15",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #15",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq16",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #16",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq9",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #9",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq10",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #10",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq11",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #11",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq12",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #12",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq5",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #5",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq6",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #6",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq7",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #7",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq8",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #8",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #1",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #2",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #3",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pwseq4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Sequential pulsewidth for cyl #4",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "boost_targ_1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Target boost - channel 1",
+            "units": "kPa",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "boost_targ_2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Target boost - channel 2",
+            "units": "kPa",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "boostduty",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Duty cycle on boost solenoid 1",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "boostduty2",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Duty cycle on boost solenoid 2",
+            "units": "%",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maf_volts",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "MAF voltage",
+            "units": "V",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors13",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 13",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors14",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 14",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors15",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 15",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors16",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 16",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors9",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 19 (adc6 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors10",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 10 (adc7 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors11",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 11",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors12",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 12",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors5",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 5 (gpioadc4 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors6",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 6 (gpioadc5 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors7",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 7 (gpioadc6 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors8",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 8 (gpioadc7 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 1 (gpioadc0 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 2 (gpioadc1 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors3",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 3 (gpioadc2 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "sensors4",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Generic sensor input 4 (gpioadc3 on MS2)",
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "wallfuel1",
+            "start": 7,
+            "length": 32,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Calculated volume of fuel on intake walls from EAE - channel 1",
+            "units": "us",
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "wallfuel2",
+            "start": 39,
+            "length": 32,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Calculated volume of fuel on intake walls from EAE - channel 2",
+            "units": "us",
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuelload2",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "'Load' used for modifier fuel table lookup",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "ignload",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "'Load' used for ignition table lookup",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "ignload2",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "'Load' used for modifier ignition table lookup",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "airtemp",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Estimated intake air temperature",
+            "units": "degF",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "status1",
+            "start": 7,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "ECU status bitfield 1",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "status2",
+            "start": 15,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "ECU status bitfield 2",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "status3",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "ECU status bitfield 3",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "status4",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "status5",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "status6",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "ECU status bitfield 6",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "status7",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "ECU status bitfield 7",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egoV1",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": null,
+            "units": "V",
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egoV2",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": null,
+            "units": "V",
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "dwell",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Main ignition dwell",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "dwell_trl",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Trailing ignition dwell",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "MAFload",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Synthetic 'load' from MAF",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuelload",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "'Load' used for fuel table lookup",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fuelcor",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Adjustment to fuel from Flex",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "MAF",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Mass air flow",
+            "units": "g/s",
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cold_adv_deg",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Cold advance",
+            "units": "deg",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "TPSdot",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Rate of change of TPS",
+            "units": "%/s",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "MAPdot",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Rate of change of MAP",
+            "units": "kPa/s",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "RPMdot",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Rate of change of RPM",
+            "units": "RPM/s",
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "totalcor",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Total fuel correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "ve1",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VE table/bank 1",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "ve2",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "VE table/bank 2",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "iacstep",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Stepper idle step number",
+            "units": "step",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "warmcor",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Warmup correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "tpsaccel",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "TPS-based acceleration",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "tpsfuelcut",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "TPS-based fuel cut",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "barocor",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Barometric fuel correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "knock",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Indication of knock input",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egocor1",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO bank 1 correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "egocor2",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "EGO bank 2 correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "aircor",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Air density correction",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "tps",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Throttle position",
+            "units": "%",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "batt",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Battery voltage",
+            "units": "V",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "afr1_old",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": null,
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "afr2_old",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": null,
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "baro",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Barometric pressure",
+            "units": "kPa",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "map",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Manifold air pressure",
+            "units": "kPa",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mat",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Manifold air temperature",
+            "units": "deg F",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "clt",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Coolant temperature",
+            "units": "deg F",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "adv_deg",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": true,
+            "initial": null,
+            "comment": "Final ignition spark advance",
+            "units": "deg BTDC",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "squirt",
+            "start": 23,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Bitfield of batch fire injector events",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "engine",
+            "start": 31,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Bitfield of engine status",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "afrtgt1",
+            "start": 39,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Bank 1 AFR target",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "afrtgt2",
+            "start": 47,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Bank 2 AFR target",
+            "units": "AFR",
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "wbo2_en1",
+            "start": 55,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "wbo2_en2",
+            "start": 63,
+            "length": 8,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "seconds",
+            "start": 7,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Seconds ECU has been on",
+            "units": "s",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pw1",
+            "start": 23,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Main pulsewidth bank 1",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "pw2",
+            "start": 39,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Main pulsewidth bank 2",
+            "units": "ms",
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "rpm",
+            "start": 55,
+            "length": 16,
+            "byte_order": "big_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "Engine RPM",
+            "units": "RPM",
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        }
+    ]
+}

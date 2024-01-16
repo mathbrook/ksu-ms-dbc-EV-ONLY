@@ -1,0 +1,2339 @@
+{
+    "messages": {
+        "VCU_PEDAL_READINGS": {
+            "id": 196,
+            "length": 8,
+            "signals": [
+                "APPS1",
+                "APPS2",
+                "BSE1",
+                "STEERING"
+            ],
+            "comment": "VCU analog pedal readings",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "VCU_WHEELSPEED_READINGS": {
+            "id": 198,
+            "length": 8,
+            "signals": [
+                "RPM_FL",
+                "RPM_FR"
+            ],
+            "comment": "VCU wheel speed sensor readings",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "VCU_STATUS": {
+            "id": 195,
+            "length": 7,
+            "signals": [
+                "SHUTDOWN_STATES",
+                "PEDAL_STATES",
+                "ECU_STATES",
+                "MAX_TORQUE",
+                "TORQUE_MODE",
+                "DISTANCE_TRAVELLED"
+            ],
+            "comment": null,
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "vcu_firmware_version": {
+            "id": 200,
+            "length": 4,
+            "signals": [
+                "fw_version"
+            ],
+            "comment": "commit hash of the firmware on the VCU",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": [
+                "vcu"
+            ]
+        },
+        "dash_buttons": {
+            "id": 235,
+            "length": 8,
+            "signals": [
+                "dash_button1status",
+                "dash_button2status",
+                "dash_button3status",
+                "dash_button4status",
+                "dash_button5status",
+                "dash_button6status"
+            ],
+            "comment": "commit hash of the firmware on the VCU",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": [
+                "dash"
+            ]
+        },
+        "segment1_temps1": {
+            "id": 26,
+            "length": 8,
+            "signals": [
+                "cell1temp",
+                "cell2temp",
+                "cell3temp",
+                "cell4temp",
+                "cell5temp",
+                "cell6temp",
+                "mintemp1to6",
+                "maxtemp1to6"
+            ],
+            "comment": "raw ADC voltage reading of module1 cells 1-6",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment1_temps2": {
+            "id": 27,
+            "length": 8,
+            "signals": [
+                "cell7temp",
+                "cell8temp",
+                "cell9temp",
+                "cell10temp",
+                "cell11temp",
+                "cell12temp",
+                "mintemp7to12",
+                "maxtemp7to12"
+            ],
+            "comment": "raw ADC voltage reading of module1 cells 6-12",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment2_temps1": {
+            "id": 42,
+            "length": 8,
+            "signals": [
+                "cell13temp",
+                "cell14temp",
+                "cell15temp",
+                "cell16temp",
+                "cell17temp",
+                "cell18temp",
+                "mintemp13to18",
+                "maxtemp13to18"
+            ],
+            "comment": "raw ADC voltage reading of module2 cells 1-6",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment2_temps2": {
+            "id": 43,
+            "length": 8,
+            "signals": [
+                "cell19temp",
+                "cell20temp",
+                "cell21temp",
+                "cell22temp",
+                "cell23temp",
+                "cell24temp",
+                "mintemp19to24",
+                "maxtemp19to24"
+            ],
+            "comment": "raw ADC voltage reading of module2 cells 6-12",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment3_temps1": {
+            "id": 58,
+            "length": 8,
+            "signals": [
+                "cell25temp",
+                "cell26temp",
+                "cell27temp",
+                "cell28temp",
+                "cell29temp",
+                "cell30temp",
+                "mintemp25to30",
+                "maxtemp25to30"
+            ],
+            "comment": "raw ADC voltage reading of module3 cells 1-6",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment3_temps2": {
+            "id": 59,
+            "length": 8,
+            "signals": [
+                "cell31temp",
+                "cell32temp",
+                "cell33temp",
+                "cell34temp",
+                "cell35temp",
+                "cell36temp",
+                "mintemp31to36",
+                "maxtemp31to36"
+            ],
+            "comment": "raw ADC voltage reading of module3 cells 6-12",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment4_temps1": {
+            "id": 74,
+            "length": 8,
+            "signals": [
+                "cell37temp",
+                "cell38temp",
+                "cell39temp",
+                "cell40temp",
+                "cell41temp",
+                "cell42temp",
+                "mintemp37to42",
+                "maxtemp37to42"
+            ],
+            "comment": "raw ADC voltage reading of module4 cells 1-6",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment4_temps2": {
+            "id": 75,
+            "length": 8,
+            "signals": [
+                "cell43temp",
+                "cell44temp",
+                "cell45temp",
+                "cell46temp",
+                "cell47temp",
+                "cell48temp",
+                "mintemp43to48",
+                "maxtemp43to48"
+            ],
+            "comment": "raw ADC voltage reading of module4 cells 6-12",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment5_temps1": {
+            "id": 90,
+            "length": 8,
+            "signals": [
+                "cell49temp",
+                "cell50temp",
+                "cell51temp",
+                "cell52temp",
+                "cell53temp",
+                "cell54temp",
+                "mintemp49to54",
+                "maxtemp49to54"
+            ],
+            "comment": "raw ADC voltage reading of module5 cells 1-6",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment5_temps2": {
+            "id": 91,
+            "length": 8,
+            "signals": [
+                "cell55temp",
+                "cell56temp",
+                "cell57temp",
+                "cell58temp",
+                "cell59temp",
+                "cell60temp",
+                "mintemp55to60",
+                "maxtemp55to60"
+            ],
+            "comment": "raw ADC voltage reading of module5 cells 6-12",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment6_temps1": {
+            "id": 106,
+            "length": 8,
+            "signals": [
+                "cell61temp",
+                "cell62temp",
+                "cell63temp",
+                "cell64temp",
+                "cell65temp",
+                "cell66temp",
+                "mintemp61to66",
+                "maxtemp61to66"
+            ],
+            "comment": "raw ADC voltage reading of module6 cells 1-6",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        },
+        "segment6_temps2": {
+            "id": 107,
+            "length": 8,
+            "signals": [
+                "cell67temp",
+                "cell68temp",
+                "cell69temp",
+                "cell70temp",
+                "cell71temp",
+                "cell72temp",
+                "mintemp67to72",
+                "maxtemp67to72"
+            ],
+            "comment": "raw ADC voltage reading of module6 cells 6-12",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": []
+        }
+    },
+    "signals": [
+        {
+            "name": "APPS1",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.001220703125,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 12,
+            "is_multiplexer": false
+        },
+        {
+            "name": "APPS2",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.001220703125,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 12,
+            "is_multiplexer": false
+        },
+        {
+            "name": "BSE1",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.001220703125,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 12,
+            "is_multiplexer": false
+        },
+        {
+            "name": "STEERING",
+            "start": 48,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.001220703125,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 12,
+            "is_multiplexer": false
+        },
+        {
+            "name": "RPM_FL",
+            "start": 0,
+            "length": 32,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 4294967296,
+            "is_multiplexer": false
+        },
+        {
+            "name": "RPM_FR",
+            "start": 32,
+            "length": 32,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 4294967296,
+            "is_multiplexer": false
+        },
+        {
+            "name": "SHUTDOWN_STATES",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "PEDAL_STATES",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "ECU_STATES",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "MAX_TORQUE",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "TORQUE_MODE",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "DISTANCE_TRAVELLED",
+            "start": 40,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
+            "name": "fw_version",
+            "start": 0,
+            "length": 32,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "dash_button1status",
+            "start": 0,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "dash_button2status",
+            "start": 1,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "dash_button3status",
+            "start": 2,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "dash_button4status",
+            "start": 3,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "dash_button5status",
+            "start": 4,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "dash_button6status",
+            "start": 5,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": null,
+            "max": null,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell1temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell2temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell3temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell4temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell5temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell6temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp1to6",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp1to6",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell7temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell8temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell9temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell10temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell11temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell12temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp7to12",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp7to12",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell13temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell14temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell15temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell16temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell17temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell18temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp13to18",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp13to18",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell19temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell20temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell21temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell22temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell23temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell24temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp19to24",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp19to24",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell25temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell26temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell27temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell28temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell29temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell30temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp25to30",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp25to30",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell31temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell32temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell33temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell34temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell35temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell36temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp31to36",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp31to36",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell37temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell38temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell39temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell40temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell41temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell42temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp37to42",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp37to42",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell43temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell44temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell45temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell46temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell47temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell48temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp43to48",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp43to48",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell49temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell50temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell51temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell52temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell53temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell54temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp49to54",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp49to54",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell55temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell56temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell57temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell58temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell59temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell60temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp55to60",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp55to60",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell61temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell62temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell63temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell64temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell65temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell66temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp61to66",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp61to66",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell67temp",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell68temp",
+            "start": 8,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell69temp",
+            "start": 16,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell70temp",
+            "start": 24,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell71temp",
+            "start": 32,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "cell72temp",
+            "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "mintemp67to72",
+            "start": 48,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        },
+        {
+            "name": "maxtemp67to72",
+            "start": 56,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "scale": 0.019607,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0.0,
+            "max": 5.0,
+            "is_multiplexer": false
+        }
+    ]
+}

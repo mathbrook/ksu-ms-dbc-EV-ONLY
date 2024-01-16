@@ -1,0 +1,1 @@
+Generated JSON files go in this folder
