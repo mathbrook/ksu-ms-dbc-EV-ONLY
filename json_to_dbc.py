@@ -51,7 +51,11 @@ def cantools_json_to_dbc(input_json: str,outfilename: str,dbs=[]):
         new_message.is_extended_frame=message_info["is_extended_frame"]
         new_message.bus_name=message_info["bus_name"]
         list_of_cantools_msgs.append(new_message)
-
+        
+    for db in dbs:
+        for message in db.messages:
+            list_of_cantools_msgs.append(message)
+            
     nodes = [cantools.db.Node('vcu',"the vehicle control unit"),
              cantools.db.Node('bms'),
              cantools.db.Node('inverter'),
@@ -61,9 +65,7 @@ def cantools_json_to_dbc(input_json: str,outfilename: str,dbs=[]):
     
     new_db = cantools.db.Database(list_of_cantools_msgs,nodes=nodes,buses=buses)
     
-    for db in dbs:
-        for message in db.messages:
-            new_db.add_message(message)
+
     
     cantools.db.dump_file(new_db,outfilename+'.dbc')
     cantools.db.dump_file(new_db,outfilename+'.sym',database_format='sym')

@@ -1,7 +1,7 @@
 import cantools
 from dbc_to_json import cantools_dbc_to_json
 from json_to_dbc import cantools_json_to_dbc
-
+#TODO actually use this
 # Method to test the generation code that it isnt messing things up
 def test_json_gen():
     # Make a json file with the existing DBCs

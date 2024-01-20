@@ -1,5 +1,6 @@
 import os, sys
 import cantools
+
 def get_dbc_files(keyword: str = None) -> cantools.db.Database:
     # Get all the DBC files for parsing and add them together
     try:
@@ -19,7 +20,7 @@ def get_dbc_files(keyword: str = None) -> cantools.db.Database:
                         file_path.append(fp)
                         file_count += 1  
     except:
-        print('FATAL ERROR: Process failed at step 1.')
+        print('failed, no dbc files found.')
         sys.exit(0)
     mega_dbc=cantools.database.Database()
     for filename in file_path:
