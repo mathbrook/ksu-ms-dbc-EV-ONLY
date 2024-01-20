@@ -33,7 +33,7 @@ jobs:
       - name: Run Python script
         run: |
           git status 
-          python json_to_dbc.py ksu_dbc # Replace 'your_script.py' with your script's filename
+          python json_to_dbc.py ksu-dbc # Replace 'your_script.py' with your script's filename
       # - name: Run executable
       #   run: ./your_executable  # Replace 'your_executable' with your executable's filename
       
@@ -45,9 +45,9 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}-${{ steps.date.outputs.date }} 
           files: | 
-            ./dbc-files/*.dbc
-            ./dbc-output/*.dbc
-            *.json
+            # ./dbc-files/*.dbc
+            ./dbc-output/ksu-dbc.dbc
+            # *.json
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
