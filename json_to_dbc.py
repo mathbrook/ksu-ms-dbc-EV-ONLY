@@ -76,7 +76,7 @@ def cantools_json_to_dbc(input_json: str,outfilename: str,dbs=[]):
 import subprocess
 def json_gen():
     args=sys.argv[1]
-    filename="dbc-output\\"+args
+    filename="dbc-output/"+args
     db_args = ["Orion","PM_CAN","Megasquirt"]
     db_list = []
     for arg in db_args:
