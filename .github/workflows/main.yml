@@ -46,7 +46,7 @@ jobs:
           tag_name: ${{ github.ref_name }}-${{ steps.date.outputs.date }} 
           files: | 
             # ./dbc-files/*.dbc
-            ./dbc-output/ksu-dbc.dbc
+            ./dbc-output/ksu_dbc.dbc
             # *.json
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
