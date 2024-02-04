@@ -33,7 +33,7 @@ jobs:
       - name: Run Python script
         run: |
           git status 
-          python json_to_dbc.py ksu-dbc # Replace 'your_script.py' with your script's filename
+          python json_to_dbc.py ksu_dbc # Replace 'your_script.py' with your script's filename
       # - name: Run executable
       #   run: ./your_executable  # Replace 'your_executable' with your executable's filename
       
