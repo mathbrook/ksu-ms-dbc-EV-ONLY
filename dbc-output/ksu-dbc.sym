@@ -10,19 +10,44 @@ Enum=D2_Inverter_StateE(0="Power up", 1="Stop", 2="Open Loop", 3="Closed Loop", 
 10="Internal State", 11="Intern State", 12="Internal State")
 
 {SIGNALS}
-Sig="APPS1" unsigned 16 /f:0.001220703125 /max:12 /min:0
-Sig="APPS2" unsigned 16 /f:0.001220703125 /max:12 /min:0
-Sig="BSE1" unsigned 16 /f:0.001220703125 /max:12 /min:0
-Sig="STEERING" unsigned 16 /f:0.001220703125 /max:12 /min:0
-Sig="RPM_FL" unsigned 32 /f:0.01 /max:4294967296 /min:0
-Sig="RPM_FR" unsigned 32 /f:0.01 /max:4294967296 /min:0
-Sig="SHUTDOWN_STATES" unsigned 8 /max:255 /min:0
-Sig="PEDAL_STATES" unsigned 8 /max:255 /min:0
-Sig="ECU_STATES" unsigned 8 /max:255 /min:0
+Sig="APPS1" unsigned 16 /u:"volts" /f:0.001220703125 /max:12 /min:0
+Sig="APPS2" unsigned 16 /u:"volts" /f:0.001220703125 /max:12 /min:0
+Sig="BSE1" unsigned 16 /u:"volts" /f:0.001220703125 /max:12 /min:0
+Sig="STEERING" unsigned 16 /u:"volts" /f:0.001220703125 /max:12 /min:0
+Sig="VCU_GLV_CURRENT" unsigned 16 /u:"bits" /max:65535 /min:0 // VCU pcb current sense of the glv rail
+Sig="VCU_GLV_VOLTAGE" unsigned 16 /u:"bits" /max:65535 /min:0 // VCU pcb voltage sense of glv rail
+Sig="VCU_BSPD_VOLTAGE" unsigned 16 /u:"bits" /max:65535 /min:0 // VCU pcb voltage sense of the BSPD signal to close relay
+Sig="VCU_5V_VOLTAGE" unsigned 16 /u:"bits" /max:65535 /min:0 // VCU pcb voltage sense of the 5v rail
+Sig="VCU_SDC_VOLTAGE" unsigned 16 /u:"bits" /max:65535 /min:0 // VCU pcb voltage sense of the shutdown circuit input
+Sig="VCU_SDC_CURRENT" unsigned 16 /u:"bits" /max:65535 /min:0 // VCU PCB current sense of shutdown circuit
+Sig="VCU_AIN9_VOLTAGE" unsigned 16 /u:"bits" /max:65535 /min:0 // VCU pcb non specific analog channel
+Sig="VCU_AIN10_VOLTAGE" unsigned 16 /u:"bits" /max:65535 /min:0 // VCU pcb non specific analog channel
+Sig="RPM_FL" unsigned 32 /u:"rpm" /f:0.01 /max:4294967296 /min:0 // front left wheel speed sensor
+Sig="RPM_FR" unsigned 32 /u:"rpm" /f:0.01 /max:4294967296 /min:0 // front right wheel speed sensor
+Sig="VCU_IMD_OK_HIGH" unsigned 1 /max:255 /min:0 // IMD status, high = good
+Sig="VCU_SHUTDOWN_B_OK_HIGH" unsigned 1 /max:255 /min:0 // (UNUSED) Shutdown loop voltage at point D, high = good
+Sig="VCU_BMS_OK_HIGH" unsigned 1 /max:255 /min:0 // BMS status, high = good
+Sig="VCU_SHUTDOWN_C_OK_HIGH" unsigned 1 /max:255 /min:0 // (UNUSED) Shutdown loop voltage at point C, high = good
+Sig="VCU_BSPD_OK_HIGH" unsigned 1 /max:255 /min:0 // BSPD status, high = good (latched)
+Sig="VCU_SHUTDOWN_D_OK_HIGH" unsigned 1 /max:255 /min:0 // (UNUSED) Shutdown loop voltage at point D, high = good
+Sig="VCU_SOFTWARE_OK_HIGH" unsigned 1 /max:255 /min:0 // (UNUSED) VCU heartbeat status, high = good
+Sig="VCU_SHUTDOWN_E_OK_HIGH" unsigned 1 /max:255 /min:0 // (UNUSED) Shutdown loop voltage at point E, high = good
+Sig="VCU_ACCEL_IMPLAUSIBLE" unsigned 1 /max:255 /min:0
+Sig="VCU_BRAKE_IMPLAUSIBLE" unsigned 1 /max:255 /min:0
+Sig="VCU_BRAKE_ACTIVE" unsigned 1 /max:255 /min:0
+Sig="VCU_BSPD_CURRENT_HIGH" unsigned 1 /max:255 /min:0
+Sig="VCU_BSPD_BRAKE_HIGH" unsigned 1 /max:255 /min:0
+Sig="VCU_ACCEL_BRAKE_IMPLAUSIBLE" unsigned 1 /max:255 /min:0
+Sig="VCU_STATEMACHINE_STATE" unsigned 3 /max:255 /min:0 // 0 = STARTUP, 1 = TS NOT ACTIVE, 2 = TS ACTIVE, 3 = ENABLING INVERTER, 4 = WAIT RTD SOUND, 5=RTD
+Sig="VCU_INVERTER_POWERED" unsigned 1 /max:255 /min:0
+Sig="VCU_ENERGY_METER_PRESENT" unsigned 1 /max:255 /min:0
+Sig="VCU_ACTIVATE_BUZZER" unsigned 1 /max:255 /min:0
+Sig="VCU_SOFTWARE_OK" unsigned 1 /max:255 /min:0
+Sig="VCU_LAUNCH_CONTROL_ACTIVE" unsigned 1 /max:255 /min:0
 Sig="MAX_TORQUE" unsigned 8 /max:255 /min:0
 Sig="TORQUE_MODE" unsigned 8 /max:255 /min:0
 Sig="DISTANCE_TRAVELLED" unsigned 16 /max:65535 /min:0
-Sig="fw_version" unsigned 32
+Sig="vcu_fw_version" unsigned 32
 Sig="dash_button1status" unsigned 1
 Sig="dash_button2status" unsigned 1
 Sig="dash_button3status" unsigned 1
@@ -797,6 +822,22 @@ Sig="Blank4" 40
 Sig="Blank5" 48
 Sig="Blank6" 56
 
+["VCU_BOARD_READINGS_ONE"]
+ID=0C9h // VCU PCB health readings
+Len=8
+Sig="VCU_GLV_CURRENT" 0
+Sig="VCU_GLV_VOLTAGE" 16
+Sig="VCU_BSPD_VOLTAGE" 32
+Sig="VCU_5V_VOLTAGE" 48
+
+["VCU_BOARD_READINGS_TWO"]
+ID=0CAh // VCU PCB health readings
+Len=8
+Sig="VCU_SDC_VOLTAGE" 0
+Sig="VCU_SDC_CURRENT" 16
+Sig="VCU_AIN9_VOLTAGE" 32
+Sig="VCU_AIN10_VOLTAGE" 48
+
 ["VCU_PEDAL_READINGS"]
 ID=0C4h // VCU analog pedal readings
 Len=8
@@ -807,13 +848,30 @@ Sig="STEERING" 48
 
 ["VCU_STATUS"]
 ID=0C3h
-Len=7
-Sig="SHUTDOWN_STATES" 0
-Sig="PEDAL_STATES" 8
-Sig="ECU_STATES" 16
-Sig="MAX_TORQUE" 24
-Sig="TORQUE_MODE" 32
-Sig="DISTANCE_TRAVELLED" 40
+Len=8
+Sig="VCU_IMD_OK_HIGH" 8
+Sig="VCU_SHUTDOWN_B_OK_HIGH" 9
+Sig="VCU_BMS_OK_HIGH" 10
+Sig="VCU_SHUTDOWN_C_OK_HIGH" 11
+Sig="VCU_BSPD_OK_HIGH" 12
+Sig="VCU_SHUTDOWN_D_OK_HIGH" 13
+Sig="VCU_SOFTWARE_OK_HIGH" 14
+Sig="VCU_SHUTDOWN_E_OK_HIGH" 15
+Sig="VCU_ACCEL_IMPLAUSIBLE" 16
+Sig="VCU_BRAKE_IMPLAUSIBLE" 17
+Sig="VCU_BRAKE_ACTIVE" 20
+Sig="VCU_BSPD_CURRENT_HIGH" 21
+Sig="VCU_BSPD_BRAKE_HIGH" 22
+Sig="VCU_ACCEL_BRAKE_IMPLAUSIBLE" 23
+Sig="VCU_STATEMACHINE_STATE" 24
+Sig="VCU_INVERTER_POWERED" 27
+Sig="VCU_ENERGY_METER_PRESENT" 28
+Sig="VCU_ACTIVATE_BUZZER" 29
+Sig="VCU_SOFTWARE_OK" 30
+Sig="VCU_LAUNCH_CONTROL_ACTIVE" 31
+Sig="MAX_TORQUE" 32
+Sig="TORQUE_MODE" 40
+Sig="DISTANCE_TRAVELLED" 48
 
 ["VCU_WHEELSPEED_READINGS"]
 ID=0C6h // VCU wheel speed sensor readings
@@ -1535,5 +1593,5 @@ Sig="maxtemp67to72" 56
 ["vcu_firmware_version"]
 ID=0C8h // commit hash of the firmware on the VCU
 Len=4
-Sig="fw_version" 0
+Sig="vcu_fw_version" 0
 

@@ -12,7 +12,35 @@
             "comment": "VCU analog pedal readings",
             "is_extended_frame": false,
             "bus_name": null,
-            "senders": []
+            "senders": ["vcu"]
+        },
+        "VCU_BOARD_READINGS_ONE": {
+            "id": 201,
+            "length": 8,
+            "signals": [
+                "VCU_GLV_CURRENT",
+                "VCU_GLV_VOLTAGE",
+                "VCU_BSPD_VOLTAGE",
+                "VCU_5V_VOLTAGE"
+            ],
+            "comment": "VCU PCB health readings",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": ["vcu"]
+        },
+        "VCU_BOARD_READINGS_TWO": {
+            "id": 202,
+            "length": 8,
+            "signals": [
+                "VCU_SDC_VOLTAGE",
+                "VCU_SDC_CURRENT",
+                "VCU_AIN9_VOLTAGE",
+                "VCU_AIN10_VOLTAGE"
+            ],
+            "comment": "VCU PCB health readings",
+            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": ["vcu"]
         },
         "VCU_WHEELSPEED_READINGS": {
             "id": 198,
@@ -24,15 +52,32 @@
             "comment": "VCU wheel speed sensor readings",
             "is_extended_frame": false,
             "bus_name": null,
-            "senders": []
+            "senders": ["vcu"]
         },
         "VCU_STATUS": {
             "id": 195,
-            "length": 7,
+            "length": 8,
             "signals": [
-                "SHUTDOWN_STATES",
-                "PEDAL_STATES",
-                "ECU_STATES",
+                "VCU_IMD_OK_HIGH",
+                "VCU_SHUTDOWN_B_OK_HIGH",
+                "VCU_BMS_OK_HIGH",
+                "VCU_SHUTDOWN_C_OK_HIGH",
+                "VCU_BSPD_OK_HIGH",
+                "VCU_SHUTDOWN_D_OK_HIGH",
+                "VCU_SOFTWARE_OK_HIGH",
+                "VCU_SHUTDOWN_E_OK_HIGH",
+                "VCU_ACCEL_IMPLAUSIBLE",
+                "VCU_BRAKE_IMPLAUSIBLE",
+                "VCU_BRAKE_ACTIVE",
+                "VCU_BSPD_CURRENT_HIGH",
+                "VCU_BSPD_BRAKE_HIGH",
+                "VCU_ACCEL_BRAKE_IMPLAUSIBLE",
+                "VCU_STATEMACHINE_STATE",
+                "VCU_INVERTER_POWERED",
+                "VCU_ENERGY_METER_PRESENT",
+                "VCU_ACTIVATE_BUZZER",
+                "VCU_SOFTWARE_OK",
+                "VCU_LAUNCH_CONTROL_ACTIVE",
                 "MAX_TORQUE",
                 "TORQUE_MODE",
                 "DISTANCE_TRAVELLED"
@@ -40,13 +85,13 @@
             "comment": null,
             "is_extended_frame": false,
             "bus_name": null,
-            "senders": []
+            "senders": ["vcu"]
         },
         "vcu_firmware_version": {
             "id": 200,
             "length": 4,
             "signals": [
-                "fw_version"
+                "vcu_fw_version"
             ],
             "comment": "commit hash of the firmware on the VCU",
             "is_extended_frame": false,
@@ -299,7 +344,7 @@
             "is_signed": false,
             "initial": null,
             "comment": null,
-            "units": null,
+            "units": "volts",
             "conversion": {
                 "scale": 0.001220703125,
                 "offset": 0,
@@ -317,7 +362,7 @@
             "is_signed": false,
             "initial": null,
             "comment": null,
-            "units": null,
+            "units": "volts",
             "conversion": {
                 "scale": 0.001220703125,
                 "offset": 0,
@@ -335,7 +380,7 @@
             "is_signed": false,
             "initial": null,
             "comment": null,
-            "units": null,
+            "units": "volts",
             "conversion": {
                 "scale": 0.001220703125,
                 "offset": 0,
@@ -353,7 +398,7 @@
             "is_signed": false,
             "initial": null,
             "comment": null,
-            "units": null,
+            "units": "volts",
             "conversion": {
                 "scale": 0.001220703125,
                 "offset": 0,
@@ -364,14 +409,158 @@
             "is_multiplexer": false
         },
         {
+            "name": "VCU_GLV_CURRENT",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VCU pcb current sense of the glv rail",
+            "units": "bits",
+            "conversion": {
+                "scale": 1.0,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_GLV_VOLTAGE",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VCU pcb voltage sense of glv rail",
+            "units": "bits",
+            "conversion": {
+                "scale": 1.0,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_BSPD_VOLTAGE",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VCU pcb voltage sense of the BSPD signal to close relay",
+            "units": "bits",
+            "conversion": {
+                "scale": 1.0,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_5V_VOLTAGE",
+            "start": 48,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VCU pcb voltage sense of the 5v rail",
+            "units": "bits",
+            "conversion": {
+                "scale": 1.0,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_SDC_VOLTAGE",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VCU pcb voltage sense of the shutdown circuit input",
+            "units": "bits",
+            "conversion": {
+                "scale": 1.0,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_SDC_CURRENT",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VCU PCB current sense of shutdown circuit",
+            "units": "bits",
+            "conversion": {
+                "scale": 1.0,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_AIN9_VOLTAGE",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VCU pcb non specific analog channel",
+            "units": "bits",
+            "conversion": {
+                "scale": 1.0,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_AIN10_VOLTAGE",
+            "start": 48,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "VCU pcb non specific analog channel",
+            "units": "bits",
+            "conversion": {
+                "scale": 1.0,
+                "offset": 0,
+                "is_float": false
+            },
+            "min": 0,
+            "max": 65535,
+            "is_multiplexer": false
+        },
+        {
             "name": "RPM_FL",
             "start": 0,
             "length": 32,
             "byte_order": "little_endian",
             "is_signed": false,
             "initial": null,
-            "comment": null,
-            "units": null,
+            "comment": "front left wheel speed sensor",
+            "units": "rpm",
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
@@ -388,8 +577,8 @@
             "byte_order": "little_endian",
             "is_signed": false,
             "initial": null,
-            "comment": null,
-            "units": null,
+            "comment": "front right wheel speed sensor",
+            "units": "rpm",
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
@@ -400,25 +589,137 @@
             "is_multiplexer": false
         },
         {
-            "name": "SHUTDOWN_STATES",
-            "start": 0,
-            "length": 8,
-            "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
-        },
-        {
-            "name": "PEDAL_STATES",
+            "name": "VCU_IMD_OK_HIGH",
             "start": 8,
-            "length": 8,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "IMD status, high = good",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_SHUTDOWN_B_OK_HIGH",
+            "start": 9,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "(UNUSED) Shutdown loop voltage at point D, high = good",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_BMS_OK_HIGH",
+            "start": 10,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "BMS status, high = good",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_SHUTDOWN_C_OK_HIGH",
+            "start": 11,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "(UNUSED) Shutdown loop voltage at point C, high = good",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_BSPD_OK_HIGH",
+            "start": 12,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "BSPD status, high = good (latched)",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_SHUTDOWN_D_OK_HIGH",
+            "start": 13,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "(UNUSED) Shutdown loop voltage at point D, high = good",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_SOFTWARE_OK_HIGH",
+            "start": 14,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "(UNUSED) VCU heartbeat status, high = good",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_SHUTDOWN_E_OK_HIGH",
+            "start": 15,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "(UNUSED) Shutdown loop voltage at point E, high = good",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_ACCEL_IMPLAUSIBLE",
+            "start": 16,
+            "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
             "initial": null,
@@ -432,9 +733,169 @@
             "is_multiplexer": false
         },
         {
-            "name": "ECU_STATES",
-            "start": 16,
-            "length": 8,
+            "name": "VCU_BRAKE_IMPLAUSIBLE",
+            "start": 17,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_BRAKE_ACTIVE",
+            "start": 20,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_BSPD_CURRENT_HIGH",
+            "start": 21,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_BSPD_BRAKE_HIGH",
+            "start": 22,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_ACCEL_BRAKE_IMPLAUSIBLE",
+            "start": 23,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_STATEMACHINE_STATE",
+            "start": 24,
+            "length": 3,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": "0 = STARTUP, 1 = TS NOT ACTIVE, 2 = TS ACTIVE, 3 = ENABLING INVERTER, 4 = WAIT RTD SOUND, 5=RTD",
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_INVERTER_POWERED",
+            "start": 27,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_ENERGY_METER_PRESENT",
+            "start": 28,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_ACTIVATE_BUZZER",
+            "start": 29,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_SOFTWARE_OK",
+            "start": 30,
+            "length": 1,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "VCU_LAUNCH_CONTROL_ACTIVE",
+            "start": 31,
+            "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
             "initial": null,
@@ -449,22 +910,6 @@
         },
         {
             "name": "MAX_TORQUE",
-            "start": 24,
-            "length": 8,
-            "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
-        },
-        {
-            "name": "TORQUE_MODE",
             "start": 32,
             "length": 8,
             "byte_order": "little_endian",
@@ -480,8 +925,24 @@
             "is_multiplexer": false
         },
         {
-            "name": "DISTANCE_TRAVELLED",
+            "name": "TORQUE_MODE",
             "start": 40,
+            "length": 8,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "initial": null,
+            "comment": null,
+            "units": null,
+            "conversion": {
+                "is_float": "false"
+            },
+            "min": 0,
+            "max": 255,
+            "is_multiplexer": false
+        },
+        {
+            "name": "DISTANCE_TRAVELLED",
+            "start": 48,
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
@@ -496,7 +957,7 @@
             "is_multiplexer": false
         },
         {
-            "name": "fw_version",
+            "name": "vcu_fw_version",
             "start": 0,
             "length": 32,
             "byte_order": "little_endian",
