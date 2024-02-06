@@ -59,29 +59,29 @@ BO_ 198 VCU_WHEELSPEED_READINGS: 8 vcu
  SG_ RPM_FL : 0|32@1+ (0.01,0) [0|4294967296] "rpm" Vector__XXX
 
 BO_ 195 VCU_STATUS: 8 vcu
- SG_ DISTANCE_TRAVELLED : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ TORQUE_MODE : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ MAX_TORQUE : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_LAUNCH_CONTROL_ACTIVE : 31|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SOFTWARE_OK : 30|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_ACTIVATE_BUZZER : 29|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_ENERGY_METER_PRESENT : 28|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_INVERTER_POWERED : 27|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_STATEMACHINE_STATE : 24|3@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_ACCEL_BRAKE_IMPLAUSIBLE : 23|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BSPD_BRAKE_HIGH : 22|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BSPD_CURRENT_HIGH : 21|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BRAKE_ACTIVE : 20|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BRAKE_IMPLAUSIBLE : 17|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_ACCEL_IMPLAUSIBLE : 16|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SHUTDOWN_E_OK_HIGH : 15|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SOFTWARE_OK_HIGH : 14|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SHUTDOWN_D_OK_HIGH : 13|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BSPD_OK_HIGH : 12|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SHUTDOWN_C_OK_HIGH : 11|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BMS_OK_HIGH : 10|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SHUTDOWN_B_OK_HIGH : 9|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_IMD_OK_HIGH : 8|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DISTANCE_TRAVELLED : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ TORQUE_MODE : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAX_TORQUE : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_LAUNCH_CONTROL_ACTIVE : 23|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_SOFTWARE_OK : 22|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_ACTIVATE_BUZZER : 21|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_ENERGY_METER_PRESENT : 20|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_INVERTER_POWERED : 19|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_STATEMACHINE_STATE : 16|3@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_ACCEL_BRAKE_IMPLAUSIBLE : 15|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_BSPD_BRAKE_HIGH : 14|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_BSPD_CURRENT_HIGH : 13|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_BRAKE_ACTIVE : 12|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_BRAKE_IMPLAUSIBLE : 9|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_ACCEL_IMPLAUSIBLE : 8|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_SHUTDOWN_E_OK_HIGH : 7|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_SOFTWARE_OK_HIGH : 6|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_SHUTDOWN_D_OK_HIGH : 5|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_BSPD_OK_HIGH : 4|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_SHUTDOWN_C_OK_HIGH : 3|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_BMS_OK_HIGH : 2|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_SHUTDOWN_B_OK_HIGH : 1|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_IMD_OK_HIGH : 0|1@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 200 vcu_firmware_version: 4 vcu
  SG_ vcu_fw_version : 0|32@1+ (1,0) [0|0] "" Vector__XXX
