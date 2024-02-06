@@ -2,6 +2,7 @@ import cantools
 from cantools.database import conversion
 import json
 import sys
+import subprocess
 import time
 from utils import get_dbc_files
 
@@ -61,11 +62,13 @@ def cantools_json_to_dbc(input_json: str,outfilename: str,dbs=[]):
              cantools.db.Node('inverter'),
              cantools.db.Node('dash')]
     
-    buses = [cantools.db.Bus('ks8', None, 500000)]
+    buses = [cantools.db.Bus('ks7', "can bus of KSU motorsports vehicles", 500000)]
     
     new_db = cantools.db.Database(list_of_cantools_msgs,nodes=nodes,buses=buses)
-    
-
+    build_version  = subprocess.run(['git','rev-parse','--short', 'HEAD'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    build_version.strip()
+    new_db.version=build_version
+    print(new_db.version)
     
     cantools.db.dump_file(new_db,outfilename+'.dbc')
     cantools.db.dump_file(new_db,outfilename+'.sym',database_format='sym')
