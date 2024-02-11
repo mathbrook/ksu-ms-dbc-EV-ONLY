@@ -38,6 +38,7 @@ jobs:
         run: |
           git status 
           rm -rf ./dbc-output
+          mkdir dbc-output
           python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_ev_dbc Orion RMS_PM
           python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_dbc Orion RMS_PM Megasquirt
 
