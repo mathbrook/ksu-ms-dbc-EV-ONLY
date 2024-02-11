@@ -1,1 +1,1 @@
-cantools==39.4.3
+cantools==39.4.4

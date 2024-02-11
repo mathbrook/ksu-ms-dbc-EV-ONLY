@@ -381,7 +381,9 @@
             },
             "min": -3.2768,
             "max": 3.2767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Flux_Weakening_Output",
@@ -399,7 +401,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Id_Command",
@@ -417,7 +421,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Iq_Command",
@@ -435,7 +441,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Commanded_Torque",
@@ -453,7 +461,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Torque_Feedback",
@@ -471,7 +481,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Power_On_Timer",
@@ -489,7 +501,9 @@
             },
             "min": 0,
             "max": 12884800.0,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Parameter_Address_Response",
@@ -505,7 +519,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Write_Success",
@@ -521,7 +537,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Data_Response",
@@ -537,7 +555,9 @@
             },
             "min": -32768,
             "max": 32767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Parameter_Address_Command",
@@ -553,7 +573,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Read_Write_Command",
@@ -569,7 +591,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Data_Command",
@@ -585,7 +609,9 @@
             },
             "min": -32768,
             "max": 32767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "Torque_Command",
@@ -603,7 +629,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "Speed_Command",
@@ -619,7 +647,9 @@
             },
             "min": -32768,
             "max": 32767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "Direction_Command",
@@ -640,7 +670,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "Inverter_Enable",
@@ -661,7 +693,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "Inverter_Discharge",
@@ -682,7 +716,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "Speed_Mode_Enable",
@@ -698,7 +734,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "Torque_Limit_Command",
@@ -716,7 +754,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Post_Fault_Lo",
@@ -732,7 +772,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Post_Fault_Hi",
@@ -748,7 +790,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Run_Fault_Lo",
@@ -764,7 +808,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Run_Fault_Hi",
@@ -780,7 +826,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_VSM_State",
@@ -809,7 +857,9 @@
             },
             "min": 0,
             "max": 15,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Inverter_State",
@@ -841,7 +891,9 @@
             },
             "min": 0,
             "max": 255,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Relay_1_Status",
@@ -857,7 +909,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Relay_2_Status",
@@ -873,7 +927,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Relay_3_Status",
@@ -889,7 +945,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Relay_4_Status",
@@ -905,7 +963,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Relay_5_Status",
@@ -921,7 +981,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Relay_6_Status",
@@ -937,7 +999,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Inverter_Run_Mode",
@@ -953,7 +1017,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Inverter_Discharge_State",
@@ -969,7 +1035,9 @@
             },
             "min": 0,
             "max": 7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D5_Inverter_Command_Mode",
@@ -985,7 +1053,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D6_Inverter_Enable_State",
@@ -1001,7 +1071,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D6_Inverter_Enable_Lockout",
@@ -1017,7 +1089,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D7_Direction_Command",
@@ -1033,7 +1107,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D7_BMS_Active",
@@ -1049,7 +1125,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D7_BMS_Torque_Limiting",
@@ -1065,7 +1143,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Reference_Voltage_1_5",
@@ -1083,7 +1163,9 @@
             },
             "min": -327.68,
             "max": 327.67,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Reference_Voltage_2_5",
@@ -1101,7 +1183,9 @@
             },
             "min": -327.68,
             "max": 327.67,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Reference_Voltage_5_0",
@@ -1119,7 +1203,9 @@
             },
             "min": -327.68,
             "max": 327.67,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Reference_Voltage_12_0",
@@ -1137,7 +1223,9 @@
             },
             "min": -327.68,
             "max": 327.67,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Flux_Command",
@@ -1155,7 +1243,9 @@
             },
             "min": -32.768,
             "max": 32.767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Flux_Feedback",
@@ -1173,7 +1263,9 @@
             },
             "min": -32.768,
             "max": 32.767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Id",
@@ -1191,7 +1283,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Iq",
@@ -1209,7 +1303,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_DC_Bus_Voltage",
@@ -1227,7 +1323,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Output_Voltage",
@@ -1245,7 +1343,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_VAB_Vd_Voltage",
@@ -1263,7 +1363,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_VBC_Vq_Voltage",
@@ -1281,7 +1383,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Phase_A_Current",
@@ -1299,7 +1403,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Phase_B_Current",
@@ -1317,7 +1423,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Phase_C_Current",
@@ -1335,7 +1443,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_DC_Bus_Current",
@@ -1353,7 +1463,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Motor_Angle_Electrical",
@@ -1371,7 +1483,9 @@
             },
             "min": 0,
             "max": 6553.5,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Motor_Speed",
@@ -1387,7 +1501,9 @@
             },
             "min": -32768,
             "max": 32767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Electrical_Output_Frequency",
@@ -1405,7 +1521,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Delta_Resolver_Filtered",
@@ -1423,7 +1541,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Digital_Input_1",
@@ -1439,7 +1559,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Digital_Input_2",
@@ -1455,7 +1577,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Digital_Input_3",
@@ -1471,7 +1595,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Digital_Input_4",
@@ -1487,7 +1613,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D5_Digital_Input_5",
@@ -1503,7 +1631,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D6_Digital_Input_6",
@@ -1519,7 +1649,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D7_Digital_Input_7",
@@ -1535,7 +1667,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D8_Digital_Input_8",
@@ -1551,7 +1685,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Analog_Input_1",
@@ -1569,7 +1705,9 @@
             },
             "min": 0,
             "max": 10.23,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Analog_Input_2",
@@ -1587,7 +1725,9 @@
             },
             "min": 0,
             "max": 10.23,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Analog_Input_3",
@@ -1605,7 +1745,9 @@
             },
             "min": 0,
             "max": 10.23,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Analog_Input_4",
@@ -1623,7 +1765,9 @@
             },
             "min": 0,
             "max": 10.23,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D5_Analog_Input_5",
@@ -1641,7 +1785,9 @@
             },
             "min": 0,
             "max": 10.23,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D6_Analog_Input_6",
@@ -1659,7 +1805,9 @@
             },
             "min": 0,
             "max": 10.23,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_RTD4_Temperature",
@@ -1677,7 +1825,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_RTD5_Temperature",
@@ -1695,7 +1845,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Motor_Temperature",
@@ -1713,7 +1865,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Torque_Shudder",
@@ -1731,7 +1885,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Control_Board_Temperature",
@@ -1749,7 +1905,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_RTD1_Temperature",
@@ -1767,7 +1925,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_RTD2_Temperature",
@@ -1785,7 +1945,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_RTD3_Temperature",
@@ -1803,7 +1965,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Module_A",
@@ -1821,7 +1985,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Module_B",
@@ -1839,7 +2005,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Module_C",
@@ -1857,7 +2025,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Gate_Driver_Board",
@@ -1875,7 +2045,9 @@
             },
             "min": -3276.8,
             "max": 3276.7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Project_Code_EEP_Ver",
@@ -1891,7 +2063,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_SW_Version",
@@ -1907,7 +2081,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_DateCode_MMDD",
@@ -1923,7 +2099,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_DateCode_YYYY",
@@ -1939,7 +2117,9 @@
             },
             "min": 0,
             "max": 65535,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Buffer_Record",
@@ -1955,7 +2135,9 @@
             },
             "min": 0,
             "max": 255,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Buffer_Segment",
@@ -1971,7 +2153,9 @@
             },
             "min": 0,
             "max": 5,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_Diag_Data_1",
@@ -1987,7 +2171,9 @@
             },
             "min": -32768,
             "max": 32767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_Diag_Data_2",
@@ -2003,7 +2189,9 @@
             },
             "min": -32768,
             "max": 32767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D5_Diag_Data_3",
@@ -2019,7 +2207,9 @@
             },
             "min": -32768,
             "max": 32767,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_ID_Byte",
@@ -2035,7 +2225,9 @@
             },
             "min": 0,
             "max": 255,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Setpoint_Calc",
@@ -2051,7 +2243,9 @@
             },
             "min": 0,
             "max": 255,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_HV_Input_Current_Sensor_Validity",
@@ -2067,7 +2261,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_14V_Master_Fault",
@@ -2083,7 +2279,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D3_HV_Input_Current",
@@ -2099,7 +2297,9 @@
             },
             "min": 0,
             "max": 255,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D4_DTC_Status",
@@ -2115,7 +2315,9 @@
             },
             "min": 0,
             "max": 7,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D5_DTC_Index",
@@ -2131,7 +2333,9 @@
             },
             "min": 0,
             "max": 31,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D6_14V_Monitor",
@@ -2147,7 +2351,9 @@
             },
             "min": 0,
             "max": 255,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D7_14V_Conditional",
@@ -2163,7 +2369,9 @@
             },
             "min": 0,
             "max": 1,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D8_14V_Current_Monitor",
@@ -2179,7 +2387,9 @@
             },
             "min": 0,
             "max": 127,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D1_Max_Discharge_Current",
@@ -2195,7 +2405,9 @@
             },
             "min": 0,
             "max": 1000,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "D2_Max_Charge_Current",
@@ -2211,7 +2423,9 @@
             },
             "min": 0,
             "max": 1000,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         }
     ]
 }

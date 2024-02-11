@@ -2,7 +2,6 @@ import cantools
 from cantools.database import conversion
 import json
 import sys
-import time
 from utils import get_dbc_files
 
 def cantools_dbc_to_json(db: cantools.db.Database,outfilename: str):
@@ -10,7 +9,6 @@ def cantools_dbc_to_json(db: cantools.db.Database,outfilename: str):
     signals_list = []
     messages_list = {"messages":{}}
     for message in db.messages:
-
         message_dict= {
             "id": "",
             "length": "",
@@ -21,6 +19,8 @@ def cantools_dbc_to_json(db: cantools.db.Database,outfilename: str):
         }
         message_dict["id"] = message.frame_id
         message_dict["length"]=message.length
+        # if message.is_multiplexed():
+        #     message_dict["signals"]=message.signal_tree
         for signal in message.signals:
 
             signal_dict = {}
@@ -48,6 +48,8 @@ def cantools_dbc_to_json(db: cantools.db.Database,outfilename: str):
             signal_dict["min"]=signal.minimum
             signal_dict["max"]=signal.maximum
             signal_dict["is_multiplexer"]=signal.is_multiplexer
+            signal_dict["multiplexer_ids"]=signal.multiplexer_ids
+            signal_dict["multiplexer_signal"]=signal.multiplexer_signal
             signals_list.append(signal_dict)
         message_dict["comment"]=message.comment
         message_dict["bus_name"]=message.bus_name
@@ -59,8 +61,13 @@ def cantools_dbc_to_json(db: cantools.db.Database,outfilename: str):
     with open(outfilename+".json","w") as outfile:
         json.dump(messages_list,outfile,indent=4)
         
+# Pass in paths to DBC files to turn into json
+# Leave spaces between each path
+# ie. "python ./dbc_to_json.py ./dbc-files/Orion_CANBUS.dbc ./dbc-files/20200701_RMS_PM_CAN_DBC.dbc"
 if __name__ == "__main__":
-    db_args = ["Orion","PM_CAN","Megasquirt"]
+    args=sys.argv[1:]
+    db_args = args
     for arg in db_args:
-        db = get_dbc_files(arg)
-        cantools_dbc_to_json(db,"json-output\\"+arg)
+        db = cantools.db.load_file(arg,'dbc')
+        outfilename = input(f"enter outfile name for {arg}: ")
+        cantools_dbc_to_json(db,"json-output\\"+outfilename)
