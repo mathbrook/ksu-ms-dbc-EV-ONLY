@@ -10,9 +10,10 @@
                 "STEERING"
             ],
             "comment": "VCU analog pedal readings",
-            "is_extended_frame": false,
             "bus_name": null,
-            "senders": ["vcu"]
+            "senders": [
+                "vcu"
+            ]
         },
         "VCU_BOARD_READINGS_ONE": {
             "id": 201,
@@ -24,9 +25,10 @@
                 "VCU_5V_VOLTAGE"
             ],
             "comment": "VCU PCB health readings",
-            "is_extended_frame": false,
             "bus_name": null,
-            "senders": ["vcu"]
+            "senders": [
+                "vcu"
+            ]
         },
         "VCU_BOARD_READINGS_TWO": {
             "id": 202,
@@ -38,9 +40,10 @@
                 "VCU_AIN10_VOLTAGE"
             ],
             "comment": "VCU PCB health readings",
-            "is_extended_frame": false,
             "bus_name": null,
-            "senders": ["vcu"]
+            "senders": [
+                "vcu"
+            ]
         },
         "VCU_WHEELSPEED_READINGS": {
             "id": 198,
@@ -50,9 +53,10 @@
                 "RPM_FR"
             ],
             "comment": "VCU wheel speed sensor readings",
-            "is_extended_frame": false,
             "bus_name": null,
-            "senders": ["vcu"]
+            "senders": [
+                "vcu"
+            ]
         },
         "VCU_STATUS": {
             "id": 195,
@@ -78,24 +82,46 @@
                 "VCU_ACTIVATE_BUZZER",
                 "VCU_SOFTWARE_OK",
                 "VCU_LAUNCH_CONTROL_ACTIVE",
-                "MAX_TORQUE",
-                "TORQUE_MODE",
-                "DISTANCE_TRAVELLED"
+                "VCU_MAX_TORQUE",
+                "VCU_TORQUE_MODE",
+                "VCU_DISTANCE_TRAVELLED"
             ],
             "comment": null,
-            "is_extended_frame": false,
             "bus_name": null,
-            "senders": ["vcu"]
+            "senders": [
+                "vcu"
+            ]
         },
         "vcu_firmware_version": {
             "id": 200,
-            "length": 4,
+            "length": 8,
             "signals": [
-                "vcu_fw_version"
+                "vcu_fw_version",
+                "vcu_on_time_seconds",
+                "vcu_project_on_main",
+                "vcu_project_is_dirty"
             ],
-            "comment": "commit hash of the firmware on the VCU",
-            "is_extended_frame": false,
+            "comment": "information on the running vcu firmware and system on-timer",
             "bus_name": null,
+            "senders": [
+                "vcu"
+            ]
+        },
+        "vcu_pedal_threshold_settings": {
+            "id": 199,
+            "length": 8,
+            "signals": [
+                "vcu_pedals_settings_MUX",
+                "vcu_brake_active_threshold",
+                "vcu_apps1_uv_threshold",
+                "vcu_apps1_start_threshold",
+                "vcu_apps1_end_threshold",
+                "vcu_apps1_ov_threshold",
+                "vcu_apps2_uv_threshold",
+                "vcu_apps2_start_threshold",
+                "vcu_apps2_end_threshold",
+                "vcu_apps2_ov_threshold"
+            ],
             "senders": [
                 "vcu"
             ]
@@ -112,7 +138,21 @@
                 "dash_button6status"
             ],
             "comment": "commit hash of the firmware on the VCU",
-            "is_extended_frame": false,
+            "bus_name": null,
+            "senders": [
+                "dash"
+            ]
+        },
+        "dash_firmware_version": {
+            "id": 236,
+            "length": 8,
+            "signals": [
+                "dash_fw_version",
+                "dash_on_time_seconds",
+                "dash_project_on_main",
+                "dash_project_is_dirty"
+            ],
+            "comment": "information on the running dash firmware and system on-timer",
             "bus_name": null,
             "senders": [
                 "dash"
@@ -132,7 +172,6 @@
                 "maxtemp1to6"
             ],
             "comment": "raw ADC voltage reading of module1 cells 1-6",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -150,7 +189,6 @@
                 "maxtemp7to12"
             ],
             "comment": "raw ADC voltage reading of module1 cells 6-12",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -168,7 +206,6 @@
                 "maxtemp13to18"
             ],
             "comment": "raw ADC voltage reading of module2 cells 1-6",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -186,7 +223,6 @@
                 "maxtemp19to24"
             ],
             "comment": "raw ADC voltage reading of module2 cells 6-12",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -204,7 +240,6 @@
                 "maxtemp25to30"
             ],
             "comment": "raw ADC voltage reading of module3 cells 1-6",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -222,7 +257,6 @@
                 "maxtemp31to36"
             ],
             "comment": "raw ADC voltage reading of module3 cells 6-12",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -240,7 +274,6 @@
                 "maxtemp37to42"
             ],
             "comment": "raw ADC voltage reading of module4 cells 1-6",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -258,7 +291,6 @@
                 "maxtemp43to48"
             ],
             "comment": "raw ADC voltage reading of module4 cells 6-12",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -276,7 +308,6 @@
                 "maxtemp49to54"
             ],
             "comment": "raw ADC voltage reading of module5 cells 1-6",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -294,7 +325,6 @@
                 "maxtemp55to60"
             ],
             "comment": "raw ADC voltage reading of module5 cells 6-12",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -312,7 +342,6 @@
                 "maxtemp61to66"
             ],
             "comment": "raw ADC voltage reading of module6 cells 1-6",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         },
@@ -330,7 +359,6 @@
                 "maxtemp67to72"
             ],
             "comment": "raw ADC voltage reading of module6 cells 6-12",
-            "is_extended_frame": false,
             "bus_name": null,
             "senders": []
         }
@@ -342,7 +370,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
             "units": "volts",
             "conversion": {
@@ -351,8 +378,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 12,
-            "is_multiplexer": false
+            "max": 12
         },
         {
             "name": "APPS2",
@@ -360,7 +386,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
             "units": "volts",
             "conversion": {
@@ -369,8 +394,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 12,
-            "is_multiplexer": false
+            "max": 12
         },
         {
             "name": "BSE1",
@@ -378,7 +402,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
             "units": "volts",
             "conversion": {
@@ -387,8 +410,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 12,
-            "is_multiplexer": false
+            "max": 12
         },
         {
             "name": "STEERING",
@@ -396,7 +418,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
             "units": "volts",
             "conversion": {
@@ -405,8 +426,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 12,
-            "is_multiplexer": false
+            "max": 12
         },
         {
             "name": "VCU_GLV_CURRENT",
@@ -414,7 +434,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "VCU pcb current sense of the glv rail",
             "units": "bits",
             "conversion": {
@@ -423,8 +442,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "VCU_GLV_VOLTAGE",
@@ -432,7 +450,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "VCU pcb voltage sense of glv rail",
             "units": "bits",
             "conversion": {
@@ -441,8 +458,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "VCU_BSPD_VOLTAGE",
@@ -450,7 +466,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "VCU pcb voltage sense of the BSPD signal to close relay",
             "units": "bits",
             "conversion": {
@@ -459,8 +474,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "VCU_5V_VOLTAGE",
@@ -468,7 +482,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "VCU pcb voltage sense of the 5v rail",
             "units": "bits",
             "conversion": {
@@ -477,8 +490,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "VCU_SDC_VOLTAGE",
@@ -486,7 +498,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "VCU pcb voltage sense of the shutdown circuit input",
             "units": "bits",
             "conversion": {
@@ -495,8 +506,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "VCU_SDC_CURRENT",
@@ -504,7 +514,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "VCU PCB current sense of shutdown circuit",
             "units": "bits",
             "conversion": {
@@ -513,8 +522,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "VCU_AIN9_VOLTAGE",
@@ -522,7 +530,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "VCU pcb non specific analog channel",
             "units": "bits",
             "conversion": {
@@ -531,8 +538,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "VCU_AIN10_VOLTAGE",
@@ -540,7 +546,6 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "VCU pcb non specific analog channel",
             "units": "bits",
             "conversion": {
@@ -549,8 +554,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "RPM_FL",
@@ -558,7 +562,6 @@
             "length": 32,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "front left wheel speed sensor",
             "units": "rpm",
             "conversion": {
@@ -567,8 +570,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 4294967296,
-            "is_multiplexer": false
+            "max": 4294967296
         },
         {
             "name": "RPM_FR",
@@ -576,7 +578,6 @@
             "length": 32,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "front right wheel speed sensor",
             "units": "rpm",
             "conversion": {
@@ -585,8 +586,7 @@
                 "is_float": false
             },
             "min": 0,
-            "max": 4294967296,
-            "is_multiplexer": false
+            "max": 4294967296
         },
         {
             "name": "VCU_IMD_OK_HIGH",
@@ -594,15 +594,9 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": "IMD status, high = good",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
             "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "max": 255
         },
         {
             "name": "VCU_SHUTDOWN_B_OK_HIGH",
@@ -610,15 +604,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": "(UNUSED) Shutdown loop voltage at point D, high = good",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": "(UNUSED) Shutdown loop voltage at point D, high = good"
         },
         {
             "name": "VCU_BMS_OK_HIGH",
@@ -626,15 +612,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": "BMS status, high = good",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": "BMS status, high = good"
         },
         {
             "name": "VCU_SHUTDOWN_C_OK_HIGH",
@@ -642,15 +620,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": "(UNUSED) Shutdown loop voltage at point C, high = good",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": "(UNUSED) Shutdown loop voltage at point C, high = good"
         },
         {
             "name": "VCU_BSPD_OK_HIGH",
@@ -658,15 +628,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": "BSPD status, high = good (latched)",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": "BSPD status, high = good (latched)"
         },
         {
             "name": "VCU_SHUTDOWN_D_OK_HIGH",
@@ -674,15 +636,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": "(UNUSED) Shutdown loop voltage at point D, high = good",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": "(UNUSED) Shutdown loop voltage at point D, high = good"
         },
         {
             "name": "VCU_SOFTWARE_OK_HIGH",
@@ -690,15 +644,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": "(UNUSED) VCU heartbeat status, high = good",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": "(UNUSED) VCU heartbeat status, high = good"
         },
         {
             "name": "VCU_SHUTDOWN_E_OK_HIGH",
@@ -706,15 +652,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": "(UNUSED) Shutdown loop voltage at point E, high = good",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": "(UNUSED) Shutdown loop voltage at point E, high = good"
         },
         {
             "name": "VCU_ACCEL_IMPLAUSIBLE",
@@ -722,15 +660,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_BRAKE_IMPLAUSIBLE",
@@ -738,15 +668,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_BRAKE_ACTIVE",
@@ -754,15 +676,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_BSPD_CURRENT_HIGH",
@@ -770,15 +684,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_BSPD_BRAKE_HIGH",
@@ -786,15 +692,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_ACCEL_BRAKE_IMPLAUSIBLE",
@@ -802,15 +700,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_STATEMACHINE_STATE",
@@ -818,175 +708,86 @@
             "length": 3,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": "0 = STARTUP, 1 = TS NOT ACTIVE, 2 = TS ACTIVE, 3 = ENABLING INVERTER, 4 = WAIT RTD SOUND, 5=RTD",
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": "0 = STARTUP, 1 = TS NOT ACTIVE, 2 = TS ACTIVE, 3 = ENABLING INVERTER, 4 = WAIT RTD SOUND, 5=RTD"
         },
         {
             "name": "VCU_INVERTER_POWERED",
             "start": 19,
             "length": 1,
             "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_ENERGY_METER_PRESENT",
             "start": 20,
             "length": 1,
             "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_ACTIVATE_BUZZER",
             "start": 21,
             "length": 1,
             "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_SOFTWARE_OK",
             "start": 22,
             "length": 1,
             "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "VCU_LAUNCH_CONTROL_ACTIVE",
             "start": 23,
             "length": 1,
             "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "comment": null
         },
         {
-            "name": "MAX_TORQUE",
+            "name": "VCU_MAX_TORQUE",
             "start": 24,
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
             "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "max": 255
         },
         {
-            "name": "TORQUE_MODE",
+            "name": "VCU_TORQUE_MODE",
             "start": 32,
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
             "min": 0,
-            "max": 255,
-            "is_multiplexer": false
+            "max": 255
         },
         {
-            "name": "DISTANCE_TRAVELLED",
+            "name": "VCU_DISTANCE_TRAVELLED",
             "start": 40,
             "length": 16,
             "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
+            "units":"meters",
             "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
             "min": 0,
-            "max": 65535,
-            "is_multiplexer": false
+            "max": 65535
         },
         {
             "name": "vcu_fw_version",
             "start": 0,
             "length": 32,
             "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": null,
-            "max": null,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "dash_button1status",
             "start": 0,
             "length": 1,
             "byte_order": "little_endian",
-            "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": null,
-            "max": null,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "dash_button2status",
@@ -994,15 +795,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": null,
-            "max": null,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "dash_button3status",
@@ -1010,15 +803,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": null,
-            "max": null,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "dash_button4status",
@@ -1026,15 +811,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": null,
-            "max": null,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "dash_button5status",
@@ -1042,15 +819,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": null,
-            "max": null,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "dash_button6status",
@@ -1058,15 +827,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
-            "comment": null,
-            "units": null,
-            "conversion": {
-                "is_float": "false"
-            },
-            "min": null,
-            "max": null,
-            "is_multiplexer": false
+            "comment": null
         },
         {
             "name": "cell1temp",
@@ -1074,17 +835,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell2temp",
@@ -1092,17 +850,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell3temp",
@@ -1110,17 +865,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell4temp",
@@ -1128,17 +880,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell5temp",
@@ -1146,17 +895,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell6temp",
@@ -1164,17 +910,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp1to6",
@@ -1182,17 +925,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp1to6",
@@ -1200,17 +940,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell7temp",
@@ -1218,17 +955,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell8temp",
@@ -1236,17 +970,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell9temp",
@@ -1254,17 +985,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell10temp",
@@ -1272,17 +1000,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell11temp",
@@ -1290,17 +1015,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell12temp",
@@ -1308,17 +1030,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp7to12",
@@ -1326,17 +1045,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp7to12",
@@ -1344,17 +1060,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell13temp",
@@ -1362,17 +1075,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell14temp",
@@ -1380,17 +1090,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell15temp",
@@ -1398,17 +1105,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell16temp",
@@ -1416,17 +1120,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell17temp",
@@ -1434,17 +1135,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell18temp",
@@ -1452,17 +1150,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp13to18",
@@ -1470,17 +1165,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp13to18",
@@ -1488,17 +1180,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell19temp",
@@ -1506,17 +1195,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell20temp",
@@ -1524,17 +1210,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell21temp",
@@ -1542,17 +1225,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell22temp",
@@ -1560,17 +1240,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell23temp",
@@ -1578,17 +1255,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell24temp",
@@ -1596,17 +1270,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp19to24",
@@ -1614,17 +1285,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp19to24",
@@ -1632,17 +1300,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell25temp",
@@ -1650,17 +1315,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell26temp",
@@ -1668,17 +1330,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell27temp",
@@ -1686,17 +1345,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell28temp",
@@ -1704,17 +1360,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell29temp",
@@ -1722,17 +1375,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell30temp",
@@ -1740,17 +1390,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp25to30",
@@ -1758,17 +1405,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp25to30",
@@ -1776,17 +1420,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell31temp",
@@ -1794,17 +1435,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell32temp",
@@ -1812,17 +1450,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell33temp",
@@ -1830,17 +1465,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell34temp",
@@ -1848,17 +1480,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell35temp",
@@ -1866,17 +1495,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell36temp",
@@ -1884,17 +1510,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp31to36",
@@ -1902,17 +1525,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp31to36",
@@ -1920,17 +1540,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell37temp",
@@ -1938,17 +1555,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell38temp",
@@ -1956,17 +1570,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell39temp",
@@ -1974,17 +1585,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell40temp",
@@ -1992,17 +1600,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell41temp",
@@ -2010,17 +1615,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell42temp",
@@ -2028,17 +1630,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp37to42",
@@ -2046,17 +1645,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp37to42",
@@ -2064,17 +1660,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell43temp",
@@ -2082,17 +1675,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell44temp",
@@ -2100,17 +1690,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell45temp",
@@ -2118,17 +1705,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell46temp",
@@ -2136,17 +1720,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell47temp",
@@ -2154,17 +1735,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell48temp",
@@ -2172,17 +1750,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp43to48",
@@ -2190,17 +1765,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp43to48",
@@ -2208,17 +1780,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell49temp",
@@ -2226,17 +1795,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell50temp",
@@ -2244,17 +1810,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell51temp",
@@ -2262,17 +1825,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell52temp",
@@ -2280,17 +1840,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell53temp",
@@ -2298,17 +1855,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell54temp",
@@ -2316,17 +1870,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp49to54",
@@ -2334,17 +1885,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp49to54",
@@ -2352,17 +1900,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell55temp",
@@ -2370,17 +1915,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell56temp",
@@ -2388,17 +1930,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell57temp",
@@ -2406,17 +1945,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell58temp",
@@ -2424,17 +1960,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell59temp",
@@ -2442,17 +1975,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell60temp",
@@ -2460,17 +1990,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp55to60",
@@ -2478,17 +2005,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp55to60",
@@ -2496,17 +2020,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell61temp",
@@ -2514,17 +2035,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell62temp",
@@ -2532,17 +2050,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell63temp",
@@ -2550,17 +2065,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell64temp",
@@ -2568,17 +2080,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell65temp",
@@ -2586,17 +2095,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell66temp",
@@ -2604,17 +2110,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp61to66",
@@ -2622,17 +2125,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp61to66",
@@ -2640,17 +2140,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell67temp",
@@ -2658,17 +2155,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell68temp",
@@ -2676,17 +2170,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell69temp",
@@ -2694,17 +2185,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell70temp",
@@ -2712,17 +2200,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell71temp",
@@ -2730,17 +2215,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "cell72temp",
@@ -2748,17 +2230,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "mintemp67to72",
@@ -2766,17 +2245,14 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
         },
         {
             "name": "maxtemp67to72",
@@ -2784,17 +2260,160 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "initial": null,
             "comment": null,
-            "units": null,
             "conversion": {
                 "scale": 0.019607,
                 "offset": 0,
                 "is_float": false
             },
             "min": 0.0,
-            "max": 5.0,
-            "is_multiplexer": false
+            "max": 5.0
+        },
+        {
+            "name": "vcu_pedals_settings_MUX",
+            "start": 0,
+            "length": 8,
+            "byte_order": "little_endian",
+            "comment": "mux signal for VCU pedal threshold information message",
+            "is_multiplexer": true
+        },
+        {
+            "name": "vcu_brake_active_threshold",
+            "start": 8,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                0
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_apps1_uv_threshold",
+            "start": 24,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                0
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_apps1_start_threshold",
+            "start": 40,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                0
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_apps1_end_threshold",
+            "start": 8,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                1
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_apps1_ov_threshold",
+            "start": 24,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                1
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_apps2_uv_threshold",
+            "start": 40,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                1
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_apps2_start_threshold",
+            "start": 8,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                2
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_apps2_end_threshold",
+            "start": 24,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                2
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_apps2_ov_threshold",
+            "start": 40,
+            "length": 16,
+            "byte_order": "little_endian",
+            "multiplexer_ids": [
+                2
+            ],
+            "multiplexer_signal": "vcu_pedals_settings_MUX"
+        },
+        {
+            "name": "vcu_on_time_seconds",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "comment": "time in seconds which the VCU has been powered on and running",
+            "units": "seconds"
+        },
+        {
+            "name": "vcu_project_on_main",
+            "start": 48,
+            "length": 1,
+            "comment": "if the compiled fw was from main branch (1) or not (0)"
+        },
+        {
+            "name": "vcu_project_is_dirty",
+            "start": 49,
+            "length": 1,
+            "comment": "if the compiled fw had uncommitted changes (1) or not (0)"
+        },
+        {
+            "name": "dash_fw_version",
+            "start": 0,
+            "length": 32,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": null
+        },
+        {
+            "name": "dash_on_time_seconds",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "comment": "time in seconds which the dash has been powered on and running",
+            "units": "seconds"
+        },
+        {
+            "name": "dash_project_on_main",
+            "start": 48,
+            "length": 1,
+            "comment": "if the compiled dash fw was from main branch (1) or not (0)"
+        },
+        {
+            "name": "dash_project_is_dirty",
+            "start": 49,
+            "length": 1,
+            "comment": "if the compiled dash fw had uncommitted changes (1) or not (0)"
         }
     ]
 }

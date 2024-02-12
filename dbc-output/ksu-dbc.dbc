@@ -1,4 +1,5 @@
-VERSION ""
+VERSION "4c8e13b
+"
 
 
 NS_ : 
@@ -58,41 +59,62 @@ BO_ 198 VCU_WHEELSPEED_READINGS: 8 vcu
  SG_ RPM_FR : 32|32@1+ (0.01,0) [0|4294967296] "rpm" Vector__XXX
  SG_ RPM_FL : 0|32@1+ (0.01,0) [0|4294967296] "rpm" Vector__XXX
 
-BO_ 195 VCU_STATUS: 8 vcu
- SG_ DISTANCE_TRAVELLED : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ TORQUE_MODE : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ MAX_TORQUE : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_LAUNCH_CONTROL_ACTIVE : 23|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SOFTWARE_OK : 22|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_ACTIVATE_BUZZER : 21|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_ENERGY_METER_PRESENT : 20|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_INVERTER_POWERED : 19|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_STATEMACHINE_STATE : 16|3@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_ACCEL_BRAKE_IMPLAUSIBLE : 15|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BSPD_BRAKE_HIGH : 14|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BSPD_CURRENT_HIGH : 13|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BRAKE_ACTIVE : 12|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BRAKE_IMPLAUSIBLE : 9|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_ACCEL_IMPLAUSIBLE : 8|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SHUTDOWN_E_OK_HIGH : 7|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SOFTWARE_OK_HIGH : 6|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SHUTDOWN_D_OK_HIGH : 5|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BSPD_OK_HIGH : 4|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SHUTDOWN_C_OK_HIGH : 3|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_BMS_OK_HIGH : 2|1@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_SHUTDOWN_B_OK_HIGH : 1|1@1+ (1,0) [0|255] "" Vector__XXX
+BO_ 195 VCU_STATUS: 7 vcu
+ SG_ VCU_DISTANCE_TRAVELLED : 40|16@1+ (1,0) [0|65535] "meters" Vector__XXX
+ SG_ VCU_TORQUE_MODE : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_MAX_TORQUE : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_LAUNCH_CONTROL_ACTIVE : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_SOFTWARE_OK : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ACTIVATE_BUZZER : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ENERGY_METER_PRESENT : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_INVERTER_POWERED : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_STATEMACHINE_STATE : 16|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ VCU_ACCEL_BRAKE_IMPLAUSIBLE : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BSPD_BRAKE_HIGH : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BSPD_CURRENT_HIGH : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BRAKE_ACTIVE : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BRAKE_IMPLAUSIBLE : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ACCEL_IMPLAUSIBLE : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_SHUTDOWN_E_OK_HIGH : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_SOFTWARE_OK_HIGH : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_SHUTDOWN_D_OK_HIGH : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BSPD_OK_HIGH : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_SHUTDOWN_C_OK_HIGH : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BMS_OK_HIGH : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_SHUTDOWN_B_OK_HIGH : 1|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VCU_IMD_OK_HIGH : 0|1@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 200 vcu_firmware_version: 4 vcu
- SG_ vcu_fw_version : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+BO_ 200 vcu_firmware_version: 8 vcu
+ SG_ vcu_project_is_dirty : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ vcu_project_on_main : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ vcu_on_time_seconds : 32|16@1+ (1,0) [0|65535] "seconds" Vector__XXX
+ SG_ vcu_fw_version : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 199 vcu_pedal_threshold_settings: 8 vcu
+ SG_ vcu_apps2_ov_threshold m2 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_apps2_uv_threshold m1 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_apps1_start_threshold m0 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_apps2_end_threshold m2 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_apps1_ov_threshold m1 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_apps1_uv_threshold m0 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_apps2_start_threshold m2 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_apps1_end_threshold m1 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_brake_active_threshold m0 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ vcu_pedals_settings_MUX M : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 235 dash_buttons: 8 dash
- SG_ dash_button6status : 5|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ dash_button5status : 4|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ dash_button4status : 3|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ dash_button3status : 2|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ dash_button2status : 1|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ dash_button1status : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ dash_button6status : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ dash_button5status : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ dash_button4status : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ dash_button3status : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ dash_button2status : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ dash_button1status : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 236 dash_firmware_version: 8 dash
+ SG_ dash_project_is_dirty : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ dash_project_on_main : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ dash_on_time_seconds : 32|16@1+ (1,0) [0|65535] "seconds" Vector__XXX
+ SG_ dash_fw_version : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 26 segment1_temps1: 8 Vector__XXX
  SG_ maxtemp1to6 : 56|8@1+ (0.019607,0) [0.0|5.0] "" Vector__XXX
@@ -820,6 +842,7 @@ BO_ 1520 megasquirt_gp0: 8 Vector__XXX
 
 
 
+CM_ "can bus of KSU motorsports vehicles";
 CM_ BU_ vcu "the vehicle control unit";
 CM_ BO_ 196 "VCU analog pedal readings";
 CM_ BO_ 201 "VCU PCB health readings";
@@ -844,8 +867,16 @@ CM_ SG_ 195 VCU_SHUTDOWN_C_OK_HIGH "(UNUSED) Shutdown loop voltage at point C, h
 CM_ SG_ 195 VCU_BMS_OK_HIGH "BMS status, high = good";
 CM_ SG_ 195 VCU_SHUTDOWN_B_OK_HIGH "(UNUSED) Shutdown loop voltage at point D, high = good";
 CM_ SG_ 195 VCU_IMD_OK_HIGH "IMD status, high = good";
-CM_ BO_ 200 "commit hash of the firmware on the VCU";
+CM_ BO_ 200 "information on the running vcu firmware and system on-timer";
+CM_ SG_ 200 vcu_project_is_dirty "if the compiled fw had uncommitted changes (1) or not (0)";
+CM_ SG_ 200 vcu_project_on_main "if the compiled fw was from main branch (1) or not (0)";
+CM_ SG_ 200 vcu_on_time_seconds "time in seconds which the VCU has been powered on and running";
+CM_ SG_ 199 vcu_pedals_settings_MUX "mux signal for VCU pedal threshold information message";
 CM_ BO_ 235 "commit hash of the firmware on the VCU";
+CM_ BO_ 236 "information on the running dash firmware and system on-timer";
+CM_ SG_ 236 dash_project_is_dirty "if the compiled dash fw had uncommitted changes (1) or not (0)";
+CM_ SG_ 236 dash_project_on_main "if the compiled dash fw was from main branch (1) or not (0)";
+CM_ SG_ 236 dash_on_time_seconds "time in seconds which the dash has been powered on and running";
 CM_ BO_ 26 "raw ADC voltage reading of module1 cells 1-6";
 CM_ BO_ 27 "raw ADC voltage reading of module1 cells 6-12";
 CM_ BO_ 42 "raw ADC voltage reading of module2 cells 1-6";

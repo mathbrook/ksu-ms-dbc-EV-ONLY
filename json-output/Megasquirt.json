@@ -959,7 +959,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "total_accel",
@@ -977,7 +979,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "launch_timer",
@@ -995,7 +999,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "launch_retard",
@@ -1013,7 +1019,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "generic_pid_duty1",
@@ -1031,7 +1039,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "generic_pid_duty2",
@@ -1049,7 +1059,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "spare63_1",
@@ -1065,7 +1077,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "spare63_2",
@@ -1081,7 +1095,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "spare63_3",
@@ -1097,7 +1113,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_west",
@@ -1113,7 +1131,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_altk",
@@ -1129,7 +1149,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_altm",
@@ -1145,7 +1167,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_speed",
@@ -1163,7 +1187,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_course",
@@ -1181,7 +1207,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_latdeg",
@@ -1197,7 +1225,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_latmin",
@@ -1213,7 +1243,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_latmmin",
@@ -1229,7 +1261,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_londeg",
@@ -1245,7 +1279,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_lonmin",
@@ -1261,7 +1297,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gps_lonmmin",
@@ -1277,7 +1315,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "launch_timing",
@@ -1295,7 +1335,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "step3_timing",
@@ -1313,7 +1355,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vsslaunch_retard",
@@ -1331,7 +1375,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "cel_status2",
@@ -1347,7 +1393,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "revlim_retard",
@@ -1365,7 +1413,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "als_timing",
@@ -1383,7 +1433,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "ext_advance",
@@ -1401,7 +1453,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "deadtime1",
@@ -1419,7 +1473,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "adv1",
@@ -1437,7 +1493,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "adv2",
@@ -1455,7 +1513,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "adv3",
@@ -1473,7 +1533,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "adv4",
@@ -1491,7 +1553,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "base_advance",
@@ -1509,7 +1573,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "idle_cor_advance",
@@ -1527,7 +1593,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "mat_retard",
@@ -1545,7 +1613,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "flex_advance",
@@ -1563,7 +1633,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "tc_retard",
@@ -1581,7 +1653,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "cel_retard",
@@ -1599,7 +1673,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fc_retard",
@@ -1617,7 +1693,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "als_addfuel",
@@ -1635,7 +1713,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "looptime",
@@ -1651,7 +1731,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fueltemp_cor",
@@ -1669,7 +1751,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuelpress_cor",
@@ -1687,7 +1771,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "ltt_cor",
@@ -1705,7 +1791,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sp1",
@@ -1721,7 +1809,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "batt_cur",
@@ -1739,7 +1829,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "cel_status",
@@ -1755,7 +1847,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fp_duty",
@@ -1773,7 +1867,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "alt_duty",
@@ -1789,7 +1885,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "load_duty",
@@ -1805,7 +1903,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "alt_targv",
@@ -1823,7 +1923,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuel_press1",
@@ -1841,7 +1943,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuel_press2",
@@ -1859,7 +1963,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuel_temp1",
@@ -1877,7 +1983,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuel_temp2",
@@ -1895,7 +2003,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "canin1",
@@ -1911,7 +2021,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "canin2",
@@ -1927,7 +2039,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "canout",
@@ -1943,7 +2057,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knk_rtd",
@@ -1961,7 +2077,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuelflow",
@@ -1977,7 +2095,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuelcons",
@@ -1993,7 +2113,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "porta",
@@ -2009,7 +2131,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "portb",
@@ -2025,7 +2149,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "porteh",
@@ -2041,7 +2167,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "portk",
@@ -2057,7 +2185,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "portmj",
@@ -2073,7 +2203,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "portp",
@@ -2089,7 +2221,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "portt",
@@ -2105,7 +2239,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "cel_errorcode",
@@ -2121,7 +2257,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl9",
@@ -2139,7 +2277,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl10",
@@ -2157,7 +2297,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl11",
@@ -2175,7 +2317,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl12",
@@ -2193,7 +2337,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl13",
@@ -2211,7 +2357,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl14",
@@ -2229,7 +2377,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl15",
@@ -2247,7 +2397,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl16",
@@ -2265,7 +2417,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl1",
@@ -2283,7 +2437,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl2",
@@ -2301,7 +2457,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl3",
@@ -2319,7 +2477,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl4",
@@ -2337,7 +2497,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl5",
@@ -2355,7 +2517,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl6",
@@ -2373,7 +2537,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl7",
@@ -2391,7 +2557,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock_cyl8",
@@ -2409,7 +2577,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuel_pct",
@@ -2427,7 +2597,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "tps_accel",
@@ -2445,7 +2617,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "SS1",
@@ -2458,7 +2632,9 @@
             "units": "RPM",
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "SS2",
@@ -2471,7 +2647,9 @@
             "units": "RPM",
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_duty1",
@@ -2489,7 +2667,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_duty2",
@@ -2507,7 +2687,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_duty3",
@@ -2525,7 +2707,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_duty4",
@@ -2543,7 +2727,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "inj_timing_pri",
@@ -2561,7 +2747,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "inj_timing_sec",
@@ -2579,7 +2767,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_target1",
@@ -2595,7 +2785,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_target2",
@@ -2611,7 +2803,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_target3",
@@ -2627,7 +2821,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_target4",
@@ -2643,7 +2839,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_ang1",
@@ -2659,7 +2857,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_ang2",
@@ -2675,7 +2875,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_ang3",
@@ -2691,7 +2893,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "vvt_ang4",
@@ -2707,7 +2911,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "synccnt",
@@ -2723,7 +2929,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "syncreason",
@@ -2739,7 +2947,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sd_filenum",
@@ -2755,7 +2965,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sd_error",
@@ -2771,7 +2983,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sd_phase",
@@ -2787,7 +3001,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sd_status",
@@ -2803,7 +3019,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "timing_err",
@@ -2819,7 +3037,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "VSS1",
@@ -2837,7 +3057,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "VSS2",
@@ -2855,7 +3077,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "VSS3",
@@ -2873,7 +3097,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "VSS4",
@@ -2891,7 +3117,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor5",
@@ -2909,7 +3137,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor6",
@@ -2927,7 +3157,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor7",
@@ -2945,7 +3177,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor8",
@@ -2963,7 +3197,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor13",
@@ -2981,7 +3217,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor14",
@@ -2999,7 +3237,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor15",
@@ -3017,7 +3257,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor16",
@@ -3035,7 +3277,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor9",
@@ -3053,7 +3297,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor10",
@@ -3071,7 +3317,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor11",
@@ -3089,7 +3337,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor12",
@@ -3107,7 +3357,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor1",
@@ -3125,7 +3377,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor2",
@@ -3143,7 +3397,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor3",
@@ -3161,7 +3417,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOcor4",
@@ -3179,7 +3437,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv13",
@@ -3197,7 +3457,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv14",
@@ -3215,7 +3477,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv15",
@@ -3233,7 +3497,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv16",
@@ -3251,7 +3517,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv9",
@@ -3269,7 +3537,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv10",
@@ -3287,7 +3557,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv11",
@@ -3305,7 +3577,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv12",
@@ -3323,7 +3597,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv5",
@@ -3341,7 +3617,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv6",
@@ -3359,7 +3637,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv7",
@@ -3377,7 +3657,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv8",
@@ -3395,7 +3677,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv1",
@@ -3413,7 +3697,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv2",
@@ -3431,7 +3717,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv3",
@@ -3449,7 +3737,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EGOv4",
@@ -3467,7 +3757,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "duty_pwm1",
@@ -3483,7 +3775,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "duty_pwm2",
@@ -3499,7 +3793,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "duty_pwm3",
@@ -3515,7 +3811,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "duty_pwm4",
@@ -3531,7 +3829,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "duty_pwm5",
@@ -3547,7 +3847,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "duty_pwm6",
@@ -3563,7 +3865,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "gear",
@@ -3579,7 +3883,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "status8",
@@ -3595,7 +3901,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR9",
@@ -3613,7 +3921,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR10",
@@ -3631,7 +3941,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR11",
@@ -3649,7 +3961,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR12",
@@ -3667,7 +3981,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR13",
@@ -3685,7 +4001,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR14",
@@ -3703,7 +4021,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR15",
@@ -3721,7 +4041,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR16",
@@ -3739,7 +4061,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR1",
@@ -3757,7 +4081,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR2",
@@ -3775,7 +4101,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR3",
@@ -3793,7 +4121,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR4",
@@ -3811,7 +4141,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR5",
@@ -3829,7 +4161,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR6",
@@ -3847,7 +4181,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR7",
@@ -3865,7 +4201,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "AFR8",
@@ -3883,7 +4221,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "accelx",
@@ -3901,7 +4241,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "accely",
@@ -3919,7 +4261,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "accelz",
@@ -3937,7 +4281,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "stream_level",
@@ -3953,7 +4299,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "water_duty",
@@ -3969,7 +4317,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EAEfcor1",
@@ -3987,7 +4337,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "EAEfcor2",
@@ -4005,7 +4357,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "VSS1dot",
@@ -4023,7 +4377,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "VSS2dot",
@@ -4041,7 +4397,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "cl_idle_targ_rpm",
@@ -4057,7 +4415,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "tpsadc",
@@ -4073,7 +4433,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "eaeload",
@@ -4091,7 +4453,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "afrload",
@@ -4109,7 +4473,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "canpwmin1",
@@ -4125,7 +4491,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "canpwmin2",
@@ -4141,7 +4509,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "canpwmin3",
@@ -4157,7 +4527,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "canpwmin4",
@@ -4173,7 +4545,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "nitrous1_duty",
@@ -4189,7 +4563,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "nitrous2_duty",
@@ -4205,7 +4581,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "nitrous_timer_out",
@@ -4223,7 +4601,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "n2o_addfuel",
@@ -4241,7 +4621,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "n2o_retard",
@@ -4259,7 +4641,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt13",
@@ -4277,7 +4661,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt14",
@@ -4295,7 +4681,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt15",
@@ -4313,7 +4701,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt16",
@@ -4331,7 +4721,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt9",
@@ -4349,7 +4741,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt10",
@@ -4367,7 +4761,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt11",
@@ -4385,7 +4781,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt12",
@@ -4403,7 +4801,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt5",
@@ -4421,7 +4821,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt6",
@@ -4439,7 +4841,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt7",
@@ -4457,7 +4861,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt8",
@@ -4475,7 +4881,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt1",
@@ -4493,7 +4901,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt2",
@@ -4511,7 +4921,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt3",
@@ -4529,7 +4941,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egt4",
@@ -4547,7 +4961,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq13",
@@ -4565,7 +4981,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq14",
@@ -4583,7 +5001,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq15",
@@ -4601,7 +5021,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq16",
@@ -4619,7 +5041,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq9",
@@ -4637,7 +5061,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq10",
@@ -4655,7 +5081,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq11",
@@ -4673,7 +5101,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq12",
@@ -4691,7 +5121,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq5",
@@ -4709,7 +5141,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq6",
@@ -4727,7 +5161,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq7",
@@ -4745,7 +5181,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq8",
@@ -4763,7 +5201,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq1",
@@ -4781,7 +5221,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq2",
@@ -4799,7 +5241,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq3",
@@ -4817,7 +5261,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pwseq4",
@@ -4835,7 +5281,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "boost_targ_1",
@@ -4853,7 +5301,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "boost_targ_2",
@@ -4871,7 +5321,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "boostduty",
@@ -4887,7 +5339,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "boostduty2",
@@ -4903,7 +5357,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "maf_volts",
@@ -4921,7 +5377,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors13",
@@ -4939,7 +5397,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors14",
@@ -4957,7 +5417,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors15",
@@ -4975,7 +5437,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors16",
@@ -4993,7 +5457,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors9",
@@ -5011,7 +5477,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors10",
@@ -5029,7 +5497,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors11",
@@ -5047,7 +5517,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors12",
@@ -5065,7 +5537,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors5",
@@ -5083,7 +5557,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors6",
@@ -5101,7 +5577,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors7",
@@ -5119,7 +5597,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors8",
@@ -5137,7 +5617,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors1",
@@ -5155,7 +5637,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors2",
@@ -5173,7 +5657,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors3",
@@ -5191,7 +5677,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "sensors4",
@@ -5209,7 +5697,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "wallfuel1",
@@ -5227,7 +5717,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "wallfuel2",
@@ -5245,7 +5737,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuelload2",
@@ -5263,7 +5757,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "ignload",
@@ -5281,7 +5777,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "ignload2",
@@ -5299,7 +5797,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "airtemp",
@@ -5317,7 +5817,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "status1",
@@ -5333,7 +5835,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "status2",
@@ -5349,7 +5853,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "status3",
@@ -5365,7 +5871,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "status4",
@@ -5381,7 +5889,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "status5",
@@ -5397,7 +5907,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "status6",
@@ -5413,7 +5925,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "status7",
@@ -5429,7 +5943,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egoV1",
@@ -5447,7 +5963,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egoV2",
@@ -5465,7 +5983,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "dwell",
@@ -5483,7 +6003,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "dwell_trl",
@@ -5501,7 +6023,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "MAFload",
@@ -5519,7 +6043,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuelload",
@@ -5537,7 +6063,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "fuelcor",
@@ -5555,7 +6083,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "MAF",
@@ -5573,7 +6103,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "cold_adv_deg",
@@ -5591,7 +6123,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "TPSdot",
@@ -5609,7 +6143,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "MAPdot",
@@ -5625,7 +6161,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "RPMdot",
@@ -5638,7 +6176,9 @@
             "units": "RPM/s",
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "totalcor",
@@ -5656,7 +6196,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "ve1",
@@ -5674,7 +6216,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "ve2",
@@ -5692,7 +6236,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "iacstep",
@@ -5708,7 +6254,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "warmcor",
@@ -5726,7 +6274,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "tpsaccel",
@@ -5744,7 +6294,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "tpsfuelcut",
@@ -5762,7 +6314,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "barocor",
@@ -5780,7 +6334,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "knock",
@@ -5798,7 +6354,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egocor1",
@@ -5816,7 +6374,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "egocor2",
@@ -5834,7 +6394,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "aircor",
@@ -5852,7 +6414,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "tps",
@@ -5870,7 +6434,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "batt",
@@ -5888,7 +6454,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "afr1_old",
@@ -5906,7 +6474,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "afr2_old",
@@ -5924,7 +6494,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "baro",
@@ -5942,7 +6514,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "map",
@@ -5960,7 +6534,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "mat",
@@ -5978,7 +6554,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "clt",
@@ -5996,7 +6574,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "adv_deg",
@@ -6014,7 +6594,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "squirt",
@@ -6030,7 +6612,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "engine",
@@ -6046,7 +6630,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "afrtgt1",
@@ -6064,7 +6650,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "afrtgt2",
@@ -6082,7 +6670,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "wbo2_en1",
@@ -6098,7 +6688,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "wbo2_en2",
@@ -6114,7 +6706,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "seconds",
@@ -6130,7 +6724,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pw1",
@@ -6148,7 +6744,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "pw2",
@@ -6166,7 +6764,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         },
         {
             "name": "rpm",
@@ -6182,7 +6782,9 @@
             },
             "min": null,
             "max": null,
-            "is_multiplexer": false
+            "is_multiplexer": false,
+            "multiplexer_ids": null,
+            "multiplexer_signal": null
         }
     ]
 }

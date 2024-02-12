@@ -1,9 +1,13 @@
 name: generate DBC and C code
 
 on:
+  pull_request:
+    branches:
+      - "main"
+      - "develop"
   push:
     branches:
-      - "**"
+      - "main"  
 
 jobs:
   build:
@@ -33,10 +37,11 @@ jobs:
       - name: Run Python script
         run: |
           git status 
-          python json_to_dbc.py ksu_dbc # Replace 'your_script.py' with your script's filename
-      # - name: Run executable
-      #   run: ./your_executable  # Replace 'your_executable' with your executable's filename
-      
+          rm -rf ./dbc-output
+          mkdir dbc-output
+          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_ev_dbc Orion RMS_PM
+          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_dbc Orion RMS_PM Megasquirt
+
       - name: Get current date and time
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H_%M_%S')"
@@ -46,7 +51,7 @@ jobs:
           tag_name: ${{ github.ref_name }}-${{ steps.date.outputs.date }} 
           files: | 
             # ./dbc-files/*.dbc
-            ./dbc-output/ksu_dbc.dbc
+            ./dbc-output/*.dbc
             # *.json
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
