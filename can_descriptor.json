@@ -109,7 +109,7 @@
         },
         "vcu_pedal_threshold_settings": {
             "id": 199,
-            "length": 8,
+            "length": 7,
             "signals": [
                 "vcu_pedals_settings_MUX",
                 "vcu_brake_active_threshold",
@@ -128,7 +128,7 @@
         },
         "dash_buttons": {
             "id": 235,
-            "length": 8,
+            "length": 1,
             "signals": [
                 "dash_button1status",
                 "dash_button2status",
@@ -137,7 +137,7 @@
                 "dash_button5status",
                 "dash_button6status"
             ],
-            "comment": "commit hash of the firmware on the VCU",
+            "comment": "status of buttons on the dash",
             "bus_name": null,
             "senders": [
                 "dash"
@@ -2383,7 +2383,7 @@
         },
         {
             "name": "vcu_project_is_dirty",
-            "start": 49,
+            "start": 56,
             "length": 1,
             "comment": "if the compiled fw had uncommitted changes (1) or not (0)"
         },
@@ -2411,7 +2411,7 @@
         },
         {
             "name": "dash_project_is_dirty",
-            "start": 49,
+            "start": 56,
             "length": 1,
             "comment": "if the compiled dash fw had uncommitted changes (1) or not (0)"
         }
