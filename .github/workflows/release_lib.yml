@@ -39,22 +39,22 @@ jobs:
           git status 
           rm -rf ./dbc-output
           mkdir dbc-output
-          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_ev_dbc Orion RMS_PM
+          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_ev Orion RMS_PM
           python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_dbc Orion RMS_PM Megasquirt
 
       - name: Publish EV DBC file
         uses: actions/upload-artifact@v2
         with:
-          name: ksu-ev-dbc-file
+          name: ev-dbc-file
           path: |
-            ./dbc-output/ksu_ev_dbc.dbc
+            ./dbc-output/ksu_ev.dbc
             
       - name: Publish Combined MEGA DBC file
         uses: actions/upload-artifact@v2
         with:
           name: ksu-dbc-file
           path: |
-            ./dbc-output/ksu_dbc.dbc
+            ./dbc-output/ksu.dbc
             
   generate-and-release:
     needs: build
@@ -65,16 +65,16 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
-          name: ksu-dbc-file
+          name: ksu_ev_dbc_file
           path: /dbc
       - name: generate code
         run: |
-          mkdir -p /hytech_can_lib
+          mkdir -p /can_lib
           cd /app
-          ./dbcc -o /hytech_can_lib /dbc/ksu_dbc.dbc
+          ./dbcc -s -o /can_lib /dbc/ksu_ev.dbc
           mkdir -p /output
-          echo "{\n\"name\": \"can_lib\",\n\"version\": \"1.0.0\",\n\"build\": {\n\t\"flags\": [\n\t\t\"-Iinc\",\n\t\t\"-Ilib\",\n\t\t\"-Iconf\"\n\t]\n}\n}" >> /hytech_can_lib/library.json
-          tar -czvf /output/can_lib.tar.gz /hytech_can_lib
+          echo "{\n\"name\": \"can_lib\",\n\"version\": \"1.0.0\",\n\"build\": {\n\t\"flags\": [\n\t\t\"-Iinc\",\n\t\t\"-Ilib\",\n\t\t\"-Iconf\"\n\t]\n}\n}" >> /can_lib/library.json
+          tar -czvf /output/can_lib.tar.gz /can_lib
 
       - name: Create Release
         id: create_release
