@@ -107,6 +107,21 @@
                 "vcu"
             ]
         },
+        "acu_firmware_version": {
+            "id": 602,
+            "length": 8,
+            "signals": [
+                "acu_fw_version",
+                "acu_on_time_seconds",
+                "acu_project_on_main",
+                "acu_project_is_dirty"
+            ],
+            "comment": "information on the running acu firmware and system on-timer",
+            "bus_name": null,
+            "senders": [
+                "acu"
+            ]
+        },
         "vcu_pedal_threshold_settings": {
             "id": 199,
             "length": 7,
@@ -2414,6 +2429,34 @@
             "start": 56,
             "length": 1,
             "comment": "if the compiled dash fw had uncommitted changes (1) or not (0)"
+        },
+        {
+            "name": "acu_fw_version",
+            "start": 0,
+            "length": 32,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": null
+        },
+        {
+            "name": "acu_on_time_seconds",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "comment": "time in seconds which the acu has been powered on and running",
+            "units": "seconds"
+        },
+        {
+            "name": "acu_project_on_main",
+            "start": 48,
+            "length": 1,
+            "comment": "if the compiled acu fw was from main branch (1) or not (0)"
+        },
+        {
+            "name": "acu_project_is_dirty",
+            "start": 56,
+            "length": 1,
+            "comment": "if the compiled acu fw had uncommitted changes (1) or not (0)"
         }
     ]
 }
