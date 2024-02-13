@@ -65,7 +65,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
-          name: ksu_ev_dbc_file
+          name: ev-dbc-file
           path: /dbc
       - name: generate code
         run: |
