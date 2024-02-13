@@ -3,6 +3,6 @@ This folder is meant to store DBC files for nodes that the team does not write f
 
 Megasquirt DBC is from here: <https://thedubshop.com/megasquirt-manuals/>
 
-PM100DX DBC is from here: https://app.box.com/s/vf9259qlaadhzxqiqrt5cco8xpsn84hk/folder/134049162381
+PM100DX DBC is from here: <https://app.box.com/s/vf9259qlaadhzxqiqrt5cco8xpsn84hk/folder/134049162381>
 
 Orion BMS DBC is generated from the BMS software tool. (TODO: Add picture guide on BMS CAN setup and dbc generation, as well as instructions to include the DBC here)
