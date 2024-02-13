@@ -1,4 +1,4 @@
-name: generate DBC and C code
+name: generate DBC and platformio library
 
 on:
   pull_request:
