@@ -39,22 +39,15 @@ jobs:
           git status 
           rm -rf ./dbc-output
           mkdir dbc-output
-          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_ev Orion RMS_PM
-          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_dbc Orion RMS_PM Megasquirt
-
+          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_ev_can Orion RMS_PM
+          
       - name: Publish EV DBC file
         uses: actions/upload-artifact@v2
         with:
           name: ev-dbc-file
           path: |
-            ./dbc-output/ksu_ev.dbc
-            
-      - name: Publish Combined MEGA DBC file
-        uses: actions/upload-artifact@v2
-        with:
-          name: ksu-dbc-file
-          path: |
-            ./dbc-output/ksu.dbc
+            ./dbc-output/ksu_ev_can.dbc
+
             
   generate-and-release:
     needs: build
@@ -71,7 +64,7 @@ jobs:
         run: |
           mkdir -p /can_lib
           cd /app
-          ./dbcc -s -o /can_lib /dbc/ksu_ev.dbc
+          ./dbcc -s -o /can_lib /dbc/ksu_ev_can.dbc
           mkdir -p /output
           echo "{\n\"name\": \"can_lib\",\n\"version\": \"1.0.0\",\n\"build\": {\n\t\"flags\": [\n\t\t\"-Iinc\",\n\t\t\"-Ilib\",\n\t\t\"-Iconf\"\n\t]\n}\n}" >> /can_lib/library.json
           tar -czvf /output/can_lib.tar.gz /can_lib
