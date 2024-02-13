@@ -71,7 +71,7 @@ jobs:
         run: |
           mkdir -p /hytech_can_lib
           cd /app
-          ./dbcc -o /hytech_can_lib ./dbc/ksu_dbc.dbc
+          ./dbcc -o /hytech_can_lib /dbc/ksu_dbc.dbc
           mkdir -p /output
           echo "{\n\"name\": \"can_lib\",\n\"version\": \"1.0.0\",\n\"build\": {\n\t\"flags\": [\n\t\t\"-Iinc\",\n\t\t\"-Ilib\",\n\t\t\"-Iconf\"\n\t]\n}\n}" >> /hytech_can_lib/library.json
           tar -czvf /output/can_lib.tar.gz /hytech_can_lib
