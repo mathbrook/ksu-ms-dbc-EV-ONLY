@@ -609,9 +609,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": "IMD status, high = good",
-            "min": 0,
-            "max": 255
+            "comment": "IMD status, high = good"
         },
         {
             "name": "VCU_SHUTDOWN_B_OK_HIGH",
@@ -671,7 +669,7 @@
         },
         {
             "name": "VCU_ACCEL_IMPLAUSIBLE",
-            "start": 8,
+            "start": 10,
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
@@ -679,7 +677,7 @@
         },
         {
             "name": "VCU_BRAKE_IMPLAUSIBLE",
-            "start": 9,
+            "start": 11,
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
