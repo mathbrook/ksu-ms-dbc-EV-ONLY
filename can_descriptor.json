@@ -10,7 +10,7 @@
                 "STEERING"
             ],
             "comment": "VCU analog pedal readings",
-            "bus_name": null,
+            "bus_name": "inverter",
             "senders": [
                 "vcu"
             ]
@@ -25,7 +25,7 @@
                 "VCU_5V_VOLTAGE"
             ],
             "comment": "VCU PCB health readings",
-            "bus_name": null,
+            "bus_name": "inverter",
             "senders": [
                 "vcu"
             ]
@@ -40,7 +40,7 @@
                 "VCU_AIN10_VOLTAGE"
             ],
             "comment": "VCU PCB health readings",
-            "bus_name": null,
+            "bus_name": "inverter",
             "senders": [
                 "vcu"
             ]
@@ -53,7 +53,7 @@
                 "RPM_FR"
             ],
             "comment": "VCU wheel speed sensor readings",
-            "bus_name": null,
+            "bus_name": "inverter",
             "senders": [
                 "vcu"
             ]
@@ -86,8 +86,8 @@
                 "VCU_TORQUE_MODE",
                 "VCU_DISTANCE_TRAVELLED"
             ],
-            "comment": null,
-            "bus_name": null,
+            "comment": "Vehicle Control Unit Status message",
+            "bus_name": "inverter",
             "senders": [
                 "vcu"
             ]
@@ -102,7 +102,7 @@
                 "vcu_project_is_dirty"
             ],
             "comment": "information on the running vcu firmware and system on-timer",
-            "bus_name": null,
+            "bus_name": "inverter",
             "senders": [
                 "vcu"
             ]
@@ -117,7 +117,7 @@
                 "acu_project_is_dirty"
             ],
             "comment": "information on the running acu firmware and system on-timer",
-            "bus_name": null,
+            "bus_name": "inverter",
             "senders": [
                 "acu"
             ]
@@ -153,7 +153,7 @@
                 "dash_button6status"
             ],
             "comment": "status of buttons on the dash",
-            "bus_name": null,
+            "bus_name": "inverter",
             "senders": [
                 "dash"
             ]
@@ -168,7 +168,7 @@
                 "dash_project_is_dirty"
             ],
             "comment": "information on the running dash firmware and system on-timer",
-            "bus_name": null,
+            "bus_name": "inverter",
             "senders": [
                 "dash"
             ]
@@ -187,7 +187,7 @@
                 "maxtemp1to6"
             ],
             "comment": "raw ADC voltage reading of module1 cells 1-6",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment1_temps2": {
@@ -204,7 +204,7 @@
                 "maxtemp7to12"
             ],
             "comment": "raw ADC voltage reading of module1 cells 6-12",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment2_temps1": {
@@ -221,7 +221,7 @@
                 "maxtemp13to18"
             ],
             "comment": "raw ADC voltage reading of module2 cells 1-6",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment2_temps2": {
@@ -238,7 +238,7 @@
                 "maxtemp19to24"
             ],
             "comment": "raw ADC voltage reading of module2 cells 6-12",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment3_temps1": {
@@ -255,7 +255,7 @@
                 "maxtemp25to30"
             ],
             "comment": "raw ADC voltage reading of module3 cells 1-6",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment3_temps2": {
@@ -272,7 +272,7 @@
                 "maxtemp31to36"
             ],
             "comment": "raw ADC voltage reading of module3 cells 6-12",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment4_temps1": {
@@ -289,7 +289,7 @@
                 "maxtemp37to42"
             ],
             "comment": "raw ADC voltage reading of module4 cells 1-6",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment4_temps2": {
@@ -306,7 +306,7 @@
                 "maxtemp43to48"
             ],
             "comment": "raw ADC voltage reading of module4 cells 6-12",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment5_temps1": {
@@ -323,7 +323,7 @@
                 "maxtemp49to54"
             ],
             "comment": "raw ADC voltage reading of module5 cells 1-6",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment5_temps2": {
@@ -340,7 +340,7 @@
                 "maxtemp55to60"
             ],
             "comment": "raw ADC voltage reading of module5 cells 6-12",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment6_temps1": {
@@ -357,7 +357,7 @@
                 "maxtemp61to66"
             ],
             "comment": "raw ADC voltage reading of module6 cells 1-6",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         },
         "segment6_temps2": {
@@ -374,7 +374,7 @@
                 "maxtemp67to72"
             ],
             "comment": "raw ADC voltage reading of module6 cells 6-12",
-            "bus_name": null,
+            "bus_name": "accumulator",
             "senders": []
         }
     },
@@ -385,7 +385,7 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null,
+            "comment": "accelerator pedal sensor 1 voltage reading",
             "units": "volts",
             "conversion": {
                 "scale": 0.001220703125,
@@ -401,7 +401,7 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null,
+            "comment": "accelerator pedal sensor 2 voltage reading",
             "units": "volts",
             "conversion": {
                 "scale": 0.001220703125,
@@ -417,7 +417,7 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null,
+            "comment": "brake pedal travel sensor voltage",
             "units": "volts",
             "conversion": {
                 "scale": 0.001220703125,
@@ -433,7 +433,7 @@
             "length": 16,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null,
+            "comment": "steering angle sensor voltage",
             "units": "volts",
             "conversion": {
                 "scale": 0.001220703125,
@@ -673,7 +673,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "1 if the accel pedal is implausible, 0 if not"
         },
         {
             "name": "VCU_BRAKE_IMPLAUSIBLE",
@@ -681,7 +681,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "1 if the brake is implausible, 0 if not"
         },
         {
             "name": "VCU_BRAKE_ACTIVE",
@@ -689,7 +689,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "1 if the brake is active (above 'vcu_brake_active_threshold')"
         },
         {
             "name": "VCU_BSPD_CURRENT_HIGH",
@@ -697,7 +697,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "1 if the acc current is above the bspd trip threshold"
         },
         {
             "name": "VCU_BSPD_BRAKE_HIGH",
@@ -705,7 +705,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "1 if the brake is above the bspd trip threshold"
         },
         {
             "name": "VCU_ACCEL_BRAKE_IMPLAUSIBLE",
@@ -713,7 +713,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "1 if the accel and brake plausibility is tripped"
         },
         {
             "name": "VCU_STATEMACHINE_STATE",
@@ -728,35 +728,35 @@
             "start": 19,
             "length": 1,
             "byte_order": "little_endian",
-            "comment": null
+            "comment": "1 if the inverter is powered, 0 if not"
         },
         {
             "name": "VCU_ENERGY_METER_PRESENT",
             "start": 20,
             "length": 1,
             "byte_order": "little_endian",
-            "comment": null
+            "comment": "1 if the energy meter is present, 0 if not"
         },
         {
             "name": "VCU_ACTIVATE_BUZZER",
             "start": 21,
             "length": 1,
             "byte_order": "little_endian",
-            "comment": null
+            "comment": "1 if the buzzer is activated, 0 if not"
         },
         {
             "name": "VCU_SOFTWARE_OK",
             "start": 22,
             "length": 1,
             "byte_order": "little_endian",
-            "comment": null
+            "comment": "currently unused"
         },
         {
             "name": "VCU_LAUNCH_CONTROL_ACTIVE",
             "start": 23,
             "length": 1,
             "byte_order": "little_endian",
-            "comment": null
+            "comment": "1 if launch control is active, 0 if not"
         },
         {
             "name": "VCU_MAX_TORQUE",
@@ -764,7 +764,7 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null,
+            "comment": "max torque setting in Newton-meters",
             "min": 0,
             "max": 255
         },
@@ -774,7 +774,7 @@
             "length": 8,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null,
+            "comment": "VCU torque mode setting ",
             "min": 0,
             "max": 255
         },
@@ -784,7 +784,7 @@
             "length": 16,
             "byte_order": "little_endian",
             "units":"meters",
-            "comment": null,
+            "comment": "distance travelled in current driving session",
             "min": 0,
             "max": 65535
         },
@@ -793,14 +793,14 @@
             "start": 0,
             "length": 32,
             "byte_order": "little_endian",
-            "comment": null
+            "comment": "short hash of the firmware on VCU "
         },
         {
             "name": "dash_button1status",
             "start": 0,
             "length": 1,
             "byte_order": "little_endian",
-            "comment": null
+            "comment": "status of button1 on dash (1 = pressed)"
         },
         {
             "name": "dash_button2status",
@@ -808,7 +808,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "status of button2 on dash (1 = pressed)"
         },
         {
             "name": "dash_button3status",
@@ -816,7 +816,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "status of button3 on dash (1 = pressed)"
         },
         {
             "name": "dash_button4status",
@@ -824,7 +824,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "status of button4 on dash (1 = pressed)"
         },
         {
             "name": "dash_button5status",
@@ -832,7 +832,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "status of button5 on dash (1 = pressed)"
         },
         {
             "name": "dash_button6status",
@@ -840,7 +840,7 @@
             "length": 1,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "status of button6 on dash (1 = pressed)"
         },
         {
             "name": "cell1temp",
@@ -2406,7 +2406,7 @@
             "length": 32,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "short hash of the firmware on dash "
         },
         {
             "name": "dash_on_time_seconds",
@@ -2434,7 +2434,7 @@
             "length": 32,
             "byte_order": "little_endian",
             "is_signed": false,
-            "comment": null
+            "comment": "short hash of the firmware on ACU"
         },
         {
             "name": "acu_on_time_seconds",
