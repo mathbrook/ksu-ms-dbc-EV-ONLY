@@ -574,34 +574,34 @@
         {
             "name": "RPM_FL",
             "start": 0,
-            "length": 32,
+            "length": 16,
             "byte_order": "little_endian",
-            "is_signed": false,
+            "is_signed": true,
             "comment": "front left wheel speed sensor",
             "units": "rpm",
             "conversion": {
-                "scale": 0.01,
+                "scale": 1.0,
                 "offset": 0,
                 "is_float": false
             },
-            "min": 0,
-            "max": 4294967296
+            "min": -32768,
+            "max": 32767
         },
         {
             "name": "RPM_FR",
-            "start": 32,
-            "length": 32,
+            "start": 16,
+            "length": 16,
             "byte_order": "little_endian",
-            "is_signed": false,
+            "is_signed": true,
             "comment": "front right wheel speed sensor",
             "units": "rpm",
             "conversion": {
-                "scale": 0.01,
+                "scale": 1.0,
                 "offset": 0,
                 "is_float": false
             },
-            "min": 0,
-            "max": 4294967296
+            "min": -32768,
+            "max": 32767
         },
         {
             "name": "VCU_IMD_OK_HIGH",
