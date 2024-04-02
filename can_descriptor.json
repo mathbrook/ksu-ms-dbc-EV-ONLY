@@ -2531,7 +2531,7 @@
             "conversion": {
                 "scale": 0.01294,
                 "offset": 0,
-                "is_float": false
+                "is_float": true
             }
         },
         {
@@ -2542,7 +2542,7 @@
             "conversion": {
                 "scale": 0.01294,
                 "offset": 0,
-                "is_float": false
+                "is_float": true
             }
         },
         {
@@ -2553,7 +2553,7 @@
             "conversion": {
                 "scale": 0.01294,
                 "offset": 0,
-                "is_float": false
+                "is_float": true
             }
         }
     ]
