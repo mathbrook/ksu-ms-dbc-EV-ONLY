@@ -207,7 +207,7 @@
         "precharge_status": {
             "id": 105,
             "length": 8,
-            "signals":[
+            "signals": [
                 "precharge_state",
                 "precharge_accVoltageMod100",
                 "precharge_accVoltageDiv100",
@@ -419,6 +419,90 @@
             "comment": "raw ADC voltage reading of module6 cells 6-12",
             "bus_name": "accumulator",
             "senders": []
+        },
+        "omni_status": {
+            "id": 1100,
+            "length": 8,
+            "signals": [
+                "omni_fw_version",
+                "omni_on_time_seconds",
+                "omni_project_on_main",
+                "omni_project_is_dirty"
+            ],
+            "comment": "information on the running omni firmware and system on-timer",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_accel_data": {
+            "id": 1101,
+            "length": 6,
+            "signals": [
+                "omni_accel_x",
+                "omni_accel_y",
+                "omni_accel_z"
+            ],
+            "comment": "LSM9DS1 accelerometer readings",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_gyro_data": {
+            "id": 1102,
+            "length": 6,
+            "signals": [
+                "omni_gyro_x",
+                "omni_gyro_y",
+                "omni_gyro_z"
+            ],
+            "comment": "LSM9DS1 gyro readings",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_heading_data": {
+            "id": 1103,
+            "length": 6,
+            "signals": [
+                "omni_heading",
+                "omni_pitch",
+                "omni_roll"
+            ],
+            "comment": "LSM9DS1 heading readings, calculated with magnetometer and accel",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_shockpot_data": {
+            "id": 1104,
+            "length": 8,
+            "signals": [
+                "omni_shockpot_fl",
+                "omni_shockpot_fr",
+                "omni_shockpot_rl",
+                "omni_shockpot_rr"
+            ],
+            "comment": "raw shock pot readings with teensy 12bit adc, assume 3v3 ref",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_steering_data": {
+            "id": 1105,
+            "length": 2,
+            "signals": [
+                "omni_steering"
+            ],
+            "comment": "raw steering angle sensor reading with teensy 12bit adc, assume 3v3 ref",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
         }
     },
     "signals": [
@@ -826,7 +910,7 @@
             "start": 40,
             "length": 16,
             "byte_order": "little_endian",
-            "units":"meters",
+            "units": "meters",
             "comment": "distance travelled in current driving session",
             "min": 0,
             "max": 65535
@@ -2569,36 +2653,211 @@
             }
         },
         {
-            "name":"precharge_state",
-            "start":0,
-            "length":8,
-            "comment":"0 - standby, 1 - precharging, 2 - running, 3 - error"
+            "name": "precharge_state",
+            "start": 0,
+            "length": 8,
+            "comment": "0 - standby, 1 - precharging, 2 - running, 3 - error"
         },
         {
-            "name":"precharge_accVoltageMod100",
-            "start":8,
-            "length":8
+            "name": "precharge_accVoltageMod100",
+            "start": 8,
+            "length": 8
         },
         {
-            "name":"precharge_accVoltageDiv100",
-            "start":16,
-            "length":8
+            "name": "precharge_accVoltageDiv100",
+            "start": 16,
+            "length": 8
         },
         {
-            "name":"precharge_tsVoltageMod100",
-            "start":24,
-            "length":8
+            "name": "precharge_tsVoltageMod100",
+            "start": 24,
+            "length": 8
         },
         {
-            "name":"precharge_tsVoltageDiv100",
-            "start":32,
-            "length":8
+            "name": "precharge_tsVoltageDiv100",
+            "start": 32,
+            "length": 8
         },
         {
             "name": "precharge_errorCode",
-            "start":40,
-            "length":8
+            "start": 40,
+            "length": 8
+        },
+        {
+            "name": "omni_accel_x",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_accel_y",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_accel_z",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_gyro_x",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_gyro_y",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_gyro_z",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_heading",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_pitch",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_roll",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_fw_version",
+            "start": 0,
+            "length": 32,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "short hash of the firmware on omni "
+        },
+        {
+            "name": "omni_on_time_seconds",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "comment": "time in seconds which the omni has been powered on and running",
+            "units": "seconds"
+        },
+        {
+            "name": "omni_project_on_main",
+            "start": 48,
+            "length": 1,
+            "comment": "if the compiled omni fw was from main branch (1), testing (2) or neither (0)"
+        },
+        {
+            "name": "omni_project_is_dirty",
+            "start": 56,
+            "length": 1,
+            "comment": "if the compiled omni fw had uncommitted changes (1) or not (0)"
+        },
+        {
+            "name": "omni_shockpot_fl",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni fl shockpot reading, adc bits"
+        },
+        {
+            "name": "omni_shockpot_fr",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni fr shockpot reading, adc bits"
+        },
+        {
+            "name": "omni_shockpot_rl",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni rl shockpot reading, adc bits"
+        },
+        {
+            "name": "omni_shockpot_rr",
+            "start": 48,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni rr shockpot reading, adc bits"
+        },
+        {
+            "name": "omni_steering",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni steering angle sensor reading, adc bits"
         }
-
     ]
 }
