@@ -503,7 +503,90 @@
             "senders": [
                 "omni"
             ]
+        },
+        "evelogger_vectornav_time": {
+            "id":500,
+            "length":8,
+            "signals":[
+                "evelogger_vectornav_time"
+            ],
+            "comment": "vectornav breakout realtime",
+            "bus_name":"daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_gyro": {
+            "id":501,
+            "length":6,
+            "signals":[
+                "evelogger_vectornav_yaw",
+                "evelogger_vectornav_roll",
+                "evelogger_vectornav_pitch"
+            ],
+            "comment": "vectornav attitude readings",
+            "bus_name":"daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_attitude": {
+            "id":502,
+            "length":6,
+            "signals":[
+                "evelogger_vectornav_W_x",
+                "evelogger_vectornav_W_y",
+                "evelogger_vectornav_W_z"
+            ],
+            "comment": "vectornav gyro readings",
+            "bus_name":"daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_position": {
+            "id":503,
+            "length":8,
+            "signals":[
+                "evelogger_vectornav_latitude",
+                "evelogger_vectornav_longitude"
+            ],
+            "comment": "vectornav position",
+            "bus_name":"daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_velocity": {
+            "id":504,
+            "length":6,
+            "signals":[
+                "evelogger_vectornav_v_n",
+                "evelogger_vectornav_v_e",
+                "evelogger_vectornav_v_d"
+            ],
+            "comment": "vectornav velocity readings",
+            "bus_name":"daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_acceleration":
+        {
+            "id":505,
+            "length":6,
+            "signals":[
+                "evelogger_vectornav_accelX",
+                "evelogger_vectornav_accelY",
+                "evelogger_vectornav_accelZ"
+            ],
+            "comment": "vectornav accelerometer readings",
+            "bus_name":"daq",
+            "senders": [
+                "evelogger"
+            ]
         }
+
     },
     "signals": [
         {
@@ -2858,6 +2941,152 @@
             "byte_order": "little_endian",
             "is_signed": false,
             "comment": "omni steering angle sensor reading, adc bits"
+        },
+        {
+            "name": "evelogger_vectornav_time",
+            "start": 0,
+            "length": 64,
+            "byte_order":"little_endian"
+        },
+        {
+            "name":"evelogger_vectornav_yaw",
+            "start":0,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_roll",
+            "start":16,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_pitch",
+            "start":32,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_W_x",
+            "start":0,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_W_y",
+            "start":16,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_W_z",
+            "start":32,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_latitude",
+            "start":0,
+            "length":32,
+            "conversion": {
+                "scale": 0.0000001,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_longitude",
+            "start":32,
+            "length":32,
+            "conversion": {
+                "scale": 0.0000001,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_v_n",
+            "start":0,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_v_e",
+            "start":16,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_v_d",
+            "start":32,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_accelX",
+            "start":0,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_accelY",
+            "start":16,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name":"evelogger_vectornav_accelZ",
+            "start":32,
+            "length":16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
         }
     ]
 }
