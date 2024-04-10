@@ -505,88 +505,278 @@
             ]
         },
         "evelogger_vectornav_time": {
-            "id":500,
-            "length":8,
-            "signals":[
+            "id": 500,
+            "length": 8,
+            "signals": [
                 "evelogger_vectornav_time"
             ],
             "comment": "vectornav breakout realtime",
-            "bus_name":"daq",
+            "bus_name": "daq",
             "senders": [
                 "evelogger"
             ]
         },
         "evelogger_vectornav_gyro": {
-            "id":501,
-            "length":6,
-            "signals":[
+            "id": 501,
+            "length": 6,
+            "signals": [
                 "evelogger_vectornav_yaw",
                 "evelogger_vectornav_roll",
                 "evelogger_vectornav_pitch"
             ],
             "comment": "vectornav attitude readings",
-            "bus_name":"daq",
+            "bus_name": "daq",
             "senders": [
                 "evelogger"
             ]
         },
         "evelogger_vectornav_attitude": {
-            "id":502,
-            "length":6,
-            "signals":[
+            "id": 502,
+            "length": 6,
+            "signals": [
                 "evelogger_vectornav_W_x",
                 "evelogger_vectornav_W_y",
                 "evelogger_vectornav_W_z"
             ],
             "comment": "vectornav gyro readings",
-            "bus_name":"daq",
+            "bus_name": "daq",
             "senders": [
                 "evelogger"
             ]
         },
         "evelogger_vectornav_position": {
-            "id":503,
-            "length":8,
-            "signals":[
+            "id": 503,
+            "length": 8,
+            "signals": [
                 "evelogger_vectornav_latitude",
                 "evelogger_vectornav_longitude"
             ],
             "comment": "vectornav position",
-            "bus_name":"daq",
+            "bus_name": "daq",
             "senders": [
                 "evelogger"
             ]
         },
         "evelogger_vectornav_velocity": {
-            "id":504,
-            "length":6,
-            "signals":[
+            "id": 504,
+            "length": 6,
+            "signals": [
                 "evelogger_vectornav_v_n",
                 "evelogger_vectornav_v_e",
                 "evelogger_vectornav_v_d"
             ],
             "comment": "vectornav velocity readings",
-            "bus_name":"daq",
+            "bus_name": "daq",
             "senders": [
                 "evelogger"
             ]
         },
-        "evelogger_vectornav_acceleration":
-        {
-            "id":505,
-            "length":6,
-            "signals":[
+        "evelogger_vectornav_acceleration": {
+            "id": 505,
+            "length": 6,
+            "signals": [
                 "evelogger_vectornav_accelX",
                 "evelogger_vectornav_accelY",
                 "evelogger_vectornav_accelZ"
             ],
             "comment": "vectornav accelerometer readings",
-            "bus_name":"daq",
+            "bus_name": "daq",
             "senders": [
                 "evelogger"
             ]
+        },
+        "cornernode_fl_shockpot": {
+            "id": 900,
+            "length": 2,
+            "signals": [
+                "cornernode_fl_shockpot"
+            ],
+            "comment": "front left corner node shockpot data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fl"
+            ]
+        },
+        "cornernode_fr_shockpot": {
+            "id": 901,
+            "length": 2,
+            "signals": [
+                "cornernode_fr_shockpot"
+            ],
+            "comment": "front right corner node shockpot data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fr"
+            ]
+        },
+        "cornernode_rl_shockpot": {
+            "id": 902,
+            "length": 2,
+            "signals": [
+                "cornernode_rl_shockpot"
+            ],
+            "comment": "rear left corner node shockpot data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rl"
+            ]
+        },
+        "cornernode_rr_shockpot": {
+            "id": 903,
+            "length": 2,
+            "signals": [
+                "cornernode_rr_shockpot"
+            ],
+            "comment": "rear right corner node shockpot data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rr"
+            ]
+        },
+        "cornernode_fl_wheelspeed": {
+            "id": 904,
+            "length": 2,
+            "signals": [
+                "cornernode_fl_wheelspeed"
+            ],
+            "comment": "front left corner node wheelspeed data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fl"
+            ]
+        },
+        "cornernode_fr_wheelspeed": {
+            "id": 905,
+            "length": 2,
+            "signals": [
+                "cornernode_fr_wheelspeed"
+            ],
+            "comment": "front right corner node wheelspeed data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fr"
+            ]
+        },
+        "cornernode_rl_wheelspeed": {
+            "id": 906,
+            "length": 2,
+            "signals": [
+                "cornernode_rl_wheelspeed"
+            ],
+            "comment": "rear left corner node wheelspeed data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rl"
+            ]
+        },
+        "cornernode_rr_wheelspeed": {
+            "id": 907,
+            "length": 2,
+            "signals": [
+                "cornernode_rr_wheelspeed"
+            ],
+            "comment": "rear right corner node wheelspeed data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rr"
+            ]
+        },
+        "cornernode_fl_tiretemp": {
+            "id": 908,
+            "length": 8,
+            "signals": [
+                "cornernode_fl_tiretemp"
+            ],
+            "comment": "front left corner node tiretemp data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fl"
+            ]
+        },
+        "cornernode_fr_tiretemp": {
+            "id": 909,
+            "length": 8,
+            "signals": [
+                "cornernode_fr_tiretemp"
+            ],
+            "comment": "front right corner node tiretemp data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fr"
+            ]
+        },
+        "cornernode_rl_tiretemp": {
+            "id": 910,
+            "length": 8,
+            "signals": [
+                "cornernode_rl_tiretemp"
+            ],
+            "comment": "rear left corner node tiretemp data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rl"
+            ]
+        },
+        "cornernode_rr_tiretemp": {
+            "id": 911,
+            "length": 8,
+            "signals": [
+                "cornernode_rr_tiretemp"
+            ],
+            "comment": "rear right corner node tiretemp data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rr"
+            ]
+        },
+        "cornernode_fl_brakepressure": {
+            "id": 912,
+            "length": 2,
+            "signals": [
+                "cornernode_fl_brakepressure"
+            ],
+            "comment": "front left corner node brakepressure data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fl"
+            ]
+        },
+        "cornernode_fr_brakepressure": {
+            "id": 913,
+            "length": 2,
+            "signals": [
+                "cornernode_fr_brakepressure"
+            ],
+            "comment": "front right corner node brakepressure data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fr"
+            ]
+        },
+        "cornernode_rl_brakepressure": {
+            "id": 914,
+            "length": 2,
+            "signals": [
+                "cornernode_rl_brakepressure"
+            ],
+            "comment": "rear left corner node brakepressure data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rl"
+            ]
+        },
+        "cornernode_rr_brakepressure": {
+            "id": 915,
+            "length": 2,
+            "signals": [
+                "cornernode_rr_brakepressure"
+            ],
+            "comment": "rear right corner node brakepressure data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rr"
+            ]
         }
-
     },
     "signals": [
         {
@@ -2946,147 +3136,241 @@
             "name": "evelogger_vectornav_time",
             "start": 0,
             "length": 64,
-            "byte_order":"little_endian"
+            "byte_order": "little_endian"
         },
         {
-            "name":"evelogger_vectornav_yaw",
-            "start":0,
-            "length":16,
+            "name": "evelogger_vectornav_yaw",
+            "start": 0,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_roll",
-            "start":16,
-            "length":16,
+            "name": "evelogger_vectornav_roll",
+            "start": 16,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_pitch",
-            "start":32,
-            "length":16,
+            "name": "evelogger_vectornav_pitch",
+            "start": 32,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_W_x",
-            "start":0,
-            "length":16,
+            "name": "evelogger_vectornav_W_x",
+            "start": 0,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_W_y",
-            "start":16,
-            "length":16,
+            "name": "evelogger_vectornav_W_y",
+            "start": 16,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_W_z",
-            "start":32,
-            "length":16,
+            "name": "evelogger_vectornav_W_z",
+            "start": 32,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_latitude",
-            "start":0,
-            "length":32,
+            "name": "evelogger_vectornav_latitude",
+            "start": 0,
+            "length": 32,
             "conversion": {
                 "scale": 0.0000001,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_longitude",
-            "start":32,
-            "length":32,
+            "name": "evelogger_vectornav_longitude",
+            "start": 32,
+            "length": 32,
             "conversion": {
                 "scale": 0.0000001,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_v_n",
-            "start":0,
-            "length":16,
+            "name": "evelogger_vectornav_v_n",
+            "start": 0,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_v_e",
-            "start":16,
-            "length":16,
+            "name": "evelogger_vectornav_v_e",
+            "start": 16,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_v_d",
-            "start":32,
-            "length":16,
+            "name": "evelogger_vectornav_v_d",
+            "start": 32,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_accelX",
-            "start":0,
-            "length":16,
+            "name": "evelogger_vectornav_accelX",
+            "start": 0,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_accelY",
-            "start":16,
-            "length":16,
+            "name": "evelogger_vectornav_accelY",
+            "start": 16,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
         },
         {
-            "name":"evelogger_vectornav_accelZ",
-            "start":32,
-            "length":16,
+            "name": "evelogger_vectornav_accelZ",
+            "start": 32,
+            "length": 16,
             "conversion": {
                 "scale": 0.01,
                 "offset": 0,
                 "is_float": true
-            }
+            },
+            "is_signed": true
+        },
+        {
+            "name": "cornernode_fl_shockpot",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fr_shockpot",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rl_shockpot",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rr_shockpot",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fl_wheelspeed",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fr_wheelspeed",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rl_wheelspeed",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rr_wheelspeed",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fl_tiretemp",
+            "start": 0,
+            "length": 64
+        },
+        {
+            "name": "cornernode_fr_tiretemp",
+            "start": 0,
+            "length": 64
+        },
+        {
+            "name": "cornernode_rl_tiretemp",
+            "start": 0,
+            "length": 64
+        },
+        {
+            "name": "cornernode_rr_tiretemp",
+            "start": 0,
+            "length": 64
+        },
+        {
+            "name": "cornernode_fl_brakepressure",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fr_brakepressure",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rl_brakepressure",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rr_brakepressure",
+            "start": 0,
+            "length": 16
         }
     ]
 }
