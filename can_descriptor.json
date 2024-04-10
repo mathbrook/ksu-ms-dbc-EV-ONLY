@@ -49,8 +49,8 @@
             "id": 198,
             "length": 8,
             "signals": [
-                "RPM_FL",
-                "RPM_FR"
+                "vcu_rpm_front_left",
+                "vcu_rpm_front_right"
             ],
             "comment": "VCU wheel speed sensor readings",
             "bus_name": "inverter",
@@ -105,6 +105,37 @@
             "bus_name": "inverter",
             "senders": [
                 "vcu"
+            ]
+        },
+        "acu_shutdown_status": {
+            "id": 600,
+            "length": 7,
+            "signals": [
+                "acu_imd_relay_state",
+                "acu_bms_relay_state",
+                "acu_imd_gpio_state",
+                "acu_bms_gpio_state",
+                "acu_imd_pwm_frequency",
+                "acu_imd_pwm_duty"
+            ],
+            "comment": "information on IMD and BMS shutdown circuit relays, as well as IMD diagnostic info",
+            "bus_name": "accumulator",
+            "senders": [
+                "acu"
+            ]
+        },
+        "acu_board_voltage_readings": {
+            "id": 601,
+            "length": 3,
+            "signals": [
+                "acu_glv_voltage",
+                "acu_sdc_voltage",
+                "acu_5v_voltage"
+            ],
+            "comment": "ACU voltage measurements",
+            "bus_name": "accumulator",
+            "senders": [
+                "acu"
             ]
         },
         "acu_firmware_version": {
@@ -171,6 +202,18 @@
             "bus_name": "inverter",
             "senders": [
                 "dash"
+            ]
+        },
+        "precharge_status": {
+            "id": 105,
+            "length": 8,
+            "signals": [
+                "precharge_state",
+                "precharge_accVoltageMod100",
+                "precharge_accVoltageDiv100",
+                "precharge_tsVoltageMod100",
+                "precharge_tsVoltageDiv100",
+                "precharge_errorCode"
             ]
         },
         "segment1_temps1": {
@@ -376,6 +419,363 @@
             "comment": "raw ADC voltage reading of module6 cells 6-12",
             "bus_name": "accumulator",
             "senders": []
+        },
+        "omni_status": {
+            "id": 1100,
+            "length": 8,
+            "signals": [
+                "omni_fw_version",
+                "omni_on_time_seconds",
+                "omni_project_on_main",
+                "omni_project_is_dirty"
+            ],
+            "comment": "information on the running omni firmware and system on-timer",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_accel_data": {
+            "id": 1101,
+            "length": 6,
+            "signals": [
+                "omni_accel_x",
+                "omni_accel_y",
+                "omni_accel_z"
+            ],
+            "comment": "LSM9DS1 accelerometer readings",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_gyro_data": {
+            "id": 1102,
+            "length": 6,
+            "signals": [
+                "omni_gyro_x",
+                "omni_gyro_y",
+                "omni_gyro_z"
+            ],
+            "comment": "LSM9DS1 gyro readings",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_heading_data": {
+            "id": 1103,
+            "length": 6,
+            "signals": [
+                "omni_heading",
+                "omni_pitch",
+                "omni_roll"
+            ],
+            "comment": "LSM9DS1 heading readings, calculated with magnetometer and accel",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_shockpot_data": {
+            "id": 1104,
+            "length": 8,
+            "signals": [
+                "omni_shockpot_fl",
+                "omni_shockpot_fr",
+                "omni_shockpot_rl",
+                "omni_shockpot_rr"
+            ],
+            "comment": "raw shock pot readings with teensy 12bit adc, assume 3v3 ref",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "omni_steering_data": {
+            "id": 1105,
+            "length": 2,
+            "signals": [
+                "omni_steering"
+            ],
+            "comment": "raw steering angle sensor reading with teensy 12bit adc, assume 3v3 ref",
+            "bus_name": "daq",
+            "senders": [
+                "omni"
+            ]
+        },
+        "evelogger_vectornav_time": {
+            "id": 500,
+            "length": 8,
+            "signals": [
+                "evelogger_vectornav_time"
+            ],
+            "comment": "vectornav breakout realtime",
+            "bus_name": "daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_gyro": {
+            "id": 501,
+            "length": 6,
+            "signals": [
+                "evelogger_vectornav_yaw",
+                "evelogger_vectornav_roll",
+                "evelogger_vectornav_pitch"
+            ],
+            "comment": "vectornav attitude readings",
+            "bus_name": "daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_attitude": {
+            "id": 502,
+            "length": 6,
+            "signals": [
+                "evelogger_vectornav_W_x",
+                "evelogger_vectornav_W_y",
+                "evelogger_vectornav_W_z"
+            ],
+            "comment": "vectornav gyro readings",
+            "bus_name": "daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_position": {
+            "id": 503,
+            "length": 8,
+            "signals": [
+                "evelogger_vectornav_latitude",
+                "evelogger_vectornav_longitude"
+            ],
+            "comment": "vectornav position",
+            "bus_name": "daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_velocity": {
+            "id": 504,
+            "length": 6,
+            "signals": [
+                "evelogger_vectornav_v_n",
+                "evelogger_vectornav_v_e",
+                "evelogger_vectornav_v_d"
+            ],
+            "comment": "vectornav velocity readings",
+            "bus_name": "daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "evelogger_vectornav_acceleration": {
+            "id": 505,
+            "length": 6,
+            "signals": [
+                "evelogger_vectornav_accelX",
+                "evelogger_vectornav_accelY",
+                "evelogger_vectornav_accelZ"
+            ],
+            "comment": "vectornav accelerometer readings",
+            "bus_name": "daq",
+            "senders": [
+                "evelogger"
+            ]
+        },
+        "cornernode_fl_shockpot": {
+            "id": 900,
+            "length": 2,
+            "signals": [
+                "cornernode_fl_shockpot"
+            ],
+            "comment": "front left corner node shockpot data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fl"
+            ]
+        },
+        "cornernode_fr_shockpot": {
+            "id": 901,
+            "length": 2,
+            "signals": [
+                "cornernode_fr_shockpot"
+            ],
+            "comment": "front right corner node shockpot data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fr"
+            ]
+        },
+        "cornernode_rl_shockpot": {
+            "id": 902,
+            "length": 2,
+            "signals": [
+                "cornernode_rl_shockpot"
+            ],
+            "comment": "rear left corner node shockpot data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rl"
+            ]
+        },
+        "cornernode_rr_shockpot": {
+            "id": 903,
+            "length": 2,
+            "signals": [
+                "cornernode_rr_shockpot"
+            ],
+            "comment": "rear right corner node shockpot data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rr"
+            ]
+        },
+        "cornernode_fl_wheelspeed": {
+            "id": 904,
+            "length": 2,
+            "signals": [
+                "cornernode_fl_wheelspeed"
+            ],
+            "comment": "front left corner node wheelspeed data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fl"
+            ]
+        },
+        "cornernode_fr_wheelspeed": {
+            "id": 905,
+            "length": 2,
+            "signals": [
+                "cornernode_fr_wheelspeed"
+            ],
+            "comment": "front right corner node wheelspeed data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fr"
+            ]
+        },
+        "cornernode_rl_wheelspeed": {
+            "id": 906,
+            "length": 2,
+            "signals": [
+                "cornernode_rl_wheelspeed"
+            ],
+            "comment": "rear left corner node wheelspeed data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rl"
+            ]
+        },
+        "cornernode_rr_wheelspeed": {
+            "id": 907,
+            "length": 2,
+            "signals": [
+                "cornernode_rr_wheelspeed"
+            ],
+            "comment": "rear right corner node wheelspeed data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rr"
+            ]
+        },
+        "cornernode_fl_tiretemp": {
+            "id": 908,
+            "length": 8,
+            "signals": [
+                "cornernode_fl_tiretemp"
+            ],
+            "comment": "front left corner node tiretemp data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fl"
+            ]
+        },
+        "cornernode_fr_tiretemp": {
+            "id": 909,
+            "length": 8,
+            "signals": [
+                "cornernode_fr_tiretemp"
+            ],
+            "comment": "front right corner node tiretemp data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fr"
+            ]
+        },
+        "cornernode_rl_tiretemp": {
+            "id": 910,
+            "length": 8,
+            "signals": [
+                "cornernode_rl_tiretemp"
+            ],
+            "comment": "rear left corner node tiretemp data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rl"
+            ]
+        },
+        "cornernode_rr_tiretemp": {
+            "id": 911,
+            "length": 8,
+            "signals": [
+                "cornernode_rr_tiretemp"
+            ],
+            "comment": "rear right corner node tiretemp data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rr"
+            ]
+        },
+        "cornernode_fl_brakepressure": {
+            "id": 912,
+            "length": 2,
+            "signals": [
+                "cornernode_fl_brakepressure"
+            ],
+            "comment": "front left corner node brakepressure data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fl"
+            ]
+        },
+        "cornernode_fr_brakepressure": {
+            "id": 913,
+            "length": 2,
+            "signals": [
+                "cornernode_fr_brakepressure"
+            ],
+            "comment": "front right corner node brakepressure data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_fr"
+            ]
+        },
+        "cornernode_rl_brakepressure": {
+            "id": 914,
+            "length": 2,
+            "signals": [
+                "cornernode_rl_brakepressure"
+            ],
+            "comment": "rear left corner node brakepressure data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rl"
+            ]
+        },
+        "cornernode_rr_brakepressure": {
+            "id": 915,
+            "length": 2,
+            "signals": [
+                "cornernode_rr_brakepressure"
+            ],
+            "comment": "rear right corner node brakepressure data",
+            "bus_name": "daq",
+            "senders": [
+                "cornernode_rr"
+            ]
         }
     },
     "signals": [
@@ -572,7 +972,7 @@
             "max": 65535
         },
         {
-            "name": "RPM_FL",
+            "name": "vcu_rpm_front_left",
             "start": 0,
             "length": 16,
             "byte_order": "little_endian",
@@ -588,7 +988,7 @@
             "max": 32767
         },
         {
-            "name": "RPM_FR",
+            "name": "vcu_rpm_front_right",
             "start": 16,
             "length": 16,
             "byte_order": "little_endian",
@@ -783,7 +1183,7 @@
             "start": 40,
             "length": 16,
             "byte_order": "little_endian",
-            "units":"meters",
+            "units": "meters",
             "comment": "distance travelled in current driving session",
             "min": 0,
             "max": 65535
@@ -2455,6 +2855,522 @@
             "start": 56,
             "length": 1,
             "comment": "if the compiled acu fw had uncommitted changes (1) or not (0)"
+        },
+        {
+            "name": "acu_imd_relay_state",
+            "start": 8,
+            "length": 1,
+            "comment": "Status of the IMD relay as sensed by the ACU: 1 is closed, 0 is open"
+        },
+        {
+            "name": "acu_bms_relay_state",
+            "start": 16,
+            "length": 1,
+            "comment": "Status of the BMS relay as sensed by the ACU: 1 is closed, 0 is open"
+        },
+        {
+            "name": "acu_imd_gpio_state",
+            "start": 24,
+            "length": 1,
+            "comment": "Status of the IMD OKHS output: 1 is OK, 0 is FAULTED"
+        },
+        {
+            "name": "acu_bms_gpio_state",
+            "start": 32,
+            "length": 1,
+            "comment": "Status of the BMS ENABLE output: 1 is OK, 0 is FAULTED"
+        },
+        {
+            "name": "acu_imd_pwm_frequency",
+            "start": 40,
+            "length": 8,
+            "comment": "PWM frequency of the IMD: 10hz on normal operation"
+        },
+        {
+            "name": "acu_imd_pwm_duty",
+            "start": 48,
+            "length": 8,
+            "comment": "duty cycle of IMD: ~5% on normal conditions"
+        },
+        {
+            "name": "acu_glv_voltage",
+            "start": 0,
+            "length": 8,
+            "comment": "ACU GLV system voltage reading",
+            "conversion": {
+                "scale": 0.01294,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "acu_sdc_voltage",
+            "start": 8,
+            "length": 8,
+            "comment": "ACU shutdown circuit voltage reading",
+            "conversion": {
+                "scale": 0.01294,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "acu_5v_voltage",
+            "start": 16,
+            "length": 8,
+            "comment": "ACU voltage reading",
+            "conversion": {
+                "scale": 0.01294,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "precharge_state",
+            "start": 0,
+            "length": 8,
+            "comment": "0 - standby, 1 - precharging, 2 - running, 3 - error"
+        },
+        {
+            "name": "precharge_accVoltageMod100",
+            "start": 8,
+            "length": 8
+        },
+        {
+            "name": "precharge_accVoltageDiv100",
+            "start": 16,
+            "length": 8
+        },
+        {
+            "name": "precharge_tsVoltageMod100",
+            "start": 24,
+            "length": 8
+        },
+        {
+            "name": "precharge_tsVoltageDiv100",
+            "start": 32,
+            "length": 8
+        },
+        {
+            "name": "precharge_errorCode",
+            "start": 40,
+            "length": 8
+        },
+        {
+            "name": "omni_accel_x",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_accel_y",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_accel_z",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.001,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_gyro_x",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_gyro_y",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_gyro_z",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_heading",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_pitch",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_roll",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            }
+        },
+        {
+            "name": "omni_fw_version",
+            "start": 0,
+            "length": 32,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "short hash of the firmware on omni "
+        },
+        {
+            "name": "omni_on_time_seconds",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "comment": "time in seconds which the omni has been powered on and running",
+            "units": "seconds"
+        },
+        {
+            "name": "omni_project_on_main",
+            "start": 48,
+            "length": 1,
+            "comment": "if the compiled omni fw was from main branch (1), testing (2) or neither (0)"
+        },
+        {
+            "name": "omni_project_is_dirty",
+            "start": 56,
+            "length": 1,
+            "comment": "if the compiled omni fw had uncommitted changes (1) or not (0)"
+        },
+        {
+            "name": "omni_shockpot_fl",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni fl shockpot reading, adc bits"
+        },
+        {
+            "name": "omni_shockpot_fr",
+            "start": 16,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni fr shockpot reading, adc bits"
+        },
+        {
+            "name": "omni_shockpot_rl",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni rl shockpot reading, adc bits"
+        },
+        {
+            "name": "omni_shockpot_rr",
+            "start": 48,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni rr shockpot reading, adc bits"
+        },
+        {
+            "name": "omni_steering",
+            "start": 0,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": false,
+            "comment": "omni steering angle sensor reading, adc bits"
+        },
+        {
+            "name": "evelogger_vectornav_time",
+            "start": 0,
+            "length": 64,
+            "byte_order": "little_endian"
+        },
+        {
+            "name": "evelogger_vectornav_yaw",
+            "start": 0,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_roll",
+            "start": 16,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_pitch",
+            "start": 32,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_W_x",
+            "start": 0,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_W_y",
+            "start": 16,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_W_z",
+            "start": 32,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_latitude",
+            "start": 0,
+            "length": 32,
+            "conversion": {
+                "scale": 0.0000001,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_longitude",
+            "start": 32,
+            "length": 32,
+            "conversion": {
+                "scale": 0.0000001,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_v_n",
+            "start": 0,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_v_e",
+            "start": 16,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_v_d",
+            "start": 32,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_accelX",
+            "start": 0,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_accelY",
+            "start": 16,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "evelogger_vectornav_accelZ",
+            "start": 32,
+            "length": 16,
+            "conversion": {
+                "scale": 0.01,
+                "offset": 0,
+                "is_float": true
+            },
+            "is_signed": true
+        },
+        {
+            "name": "cornernode_fl_shockpot",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fr_shockpot",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rl_shockpot",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rr_shockpot",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fl_wheelspeed",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fr_wheelspeed",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rl_wheelspeed",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rr_wheelspeed",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fl_tiretemp",
+            "start": 0,
+            "length": 64
+        },
+        {
+            "name": "cornernode_fr_tiretemp",
+            "start": 0,
+            "length": 64
+        },
+        {
+            "name": "cornernode_rl_tiretemp",
+            "start": 0,
+            "length": 64
+        },
+        {
+            "name": "cornernode_rr_tiretemp",
+            "start": 0,
+            "length": 64
+        },
+        {
+            "name": "cornernode_fl_brakepressure",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_fr_brakepressure",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rl_brakepressure",
+            "start": 0,
+            "length": 16
+        },
+        {
+            "name": "cornernode_rr_brakepressure",
+            "start": 0,
+            "length": 16
         }
     ]
 }
