@@ -82,7 +82,7 @@ def cantools_json_to_dbc(input_json: str,outfilename: str,dbs=[]):
         new_message = cantools.db.Message(frame_id=message_info["id"],
                                         name=message,length=message_info["length"],
                                         signals=signals,
-                                        senders=message_info["senders"])
+                                        senders=(message_info['senders'] if 'senders' in message_info.keys() else None))
         try:
             new_message.comment=message_info["comment"]
         except:
