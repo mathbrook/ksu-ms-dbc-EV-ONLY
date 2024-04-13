@@ -45,6 +45,21 @@
                 "vcu"
             ]
         },
+        "vcu_launchcontrol_diagdata": {
+            "id": 203,
+            "length": 8,
+            "signals": [
+                "vcu_launchcontrol_elapsed_time",
+                "vcu_launchcontrol_outputtorquecommand",
+                "vcu_launchcontrol_state",
+                "vcu_launchcontrol_type"
+            ],
+            "comment": "vcu launchController system status",
+            "bus_name": "inverter",
+            "senders": [
+                "vcu"
+            ]
+        },
         "VCU_WHEELSPEED_READINGS": {
             "id": 198,
             "length": 8,
@@ -983,6 +998,55 @@
             },
             "min": 0,
             "max": 65535
+        },
+        {
+            "name": "vcu_launchcontrol_elapsed_time",
+            "start": 0,
+            "length": 32,
+            "byte_order": "little_endian",
+            "comment": "time that the launch controller has been executing, in miliiseconds"
+        },
+        {
+            "name": "vcu_launchcontrol_outputtorquecommand",
+            "start": 32,
+            "length": 16,
+            "byte_order": "little_endian",
+            "is_signed": true,
+            "comment": "launch controller torque output"
+        },
+        {
+            "name": "vcu_launchcontrol_state",
+            "start":48,
+            "length":8,
+            "conversion": {
+                "scale": 1,
+                "offset": 0,
+                "choices": {
+                    "0": "IDLE",
+                    "1": "WAITING_TO_LAUNCH",
+                    "2": "LAUNCHING",
+                    "3": "FINISHED"
+                }
+            },
+            "min": 0,
+            "max": 3
+        },
+        {
+            "name": "vcu_launchcontrol_type",
+            "start":56,
+            "length":8,
+            "conversion": {
+                "scale": 1,
+                "offset": 0,
+                "choices": {
+                    "0": "LC_DRIVERCONTROL",
+                    "1": "LC_LOOKUP",
+                    "2": "LC_LINEAR",
+                    "3": "LC_NUM_CONTROLLERS"
+                }
+            },
+            "min": 0,
+            "max": 3
         },
         {
             "name": "vcu_rpm_front_left",
