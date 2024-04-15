@@ -60,6 +60,20 @@
                 "vcu"
             ]
         },
+        "vcu_pedals_travel": {
+            "id": 204,
+            "length": 6,
+            "signals": [
+                "vcu_apps1_travel",
+                "vcu_apps2_travel",
+                "vcu_bse1_travel"
+            ],
+            "comment": "the calculated pedal travels",
+            "bus_name": "inverter",
+            "senders": [
+                "vcu"
+            ]
+        },
         "VCU_WHEELSPEED_READINGS": {
             "id": 198,
             "length": 8,
@@ -1016,8 +1030,8 @@
         },
         {
             "name": "vcu_launchcontrol_state",
-            "start":48,
-            "length":8,
+            "start": 48,
+            "length": 8,
             "conversion": {
                 "scale": 1,
                 "offset": 0,
@@ -1033,8 +1047,8 @@
         },
         {
             "name": "vcu_launchcontrol_type",
-            "start":56,
-            "length":8,
+            "start": 56,
+            "length": 8,
             "conversion": {
                 "scale": 1,
                 "offset": 0,
@@ -3032,6 +3046,42 @@
             "name": "precharge_errorCode",
             "start": 40,
             "length": 8
+        },
+        {
+            "name": "vcu_apps1_travel",
+            "start": 0,
+            "length": 16,
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            },
+            "comment": "0 to 100% - a negative value = implaus"
+        },
+        {
+            "name": "vcu_apps2_travel",
+            "start": 16,
+            "length": 16,
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            },
+            "comment": "0 to 100% - a negative value = implaus"
+        },
+        {
+            "name": "vcu_bse1_travel",
+            "start": 32,
+            "length": 16,
+            "is_signed": true,
+            "conversion": {
+                "scale": 0.1,
+                "offset": 0,
+                "is_float": true
+            },
+            "comment": "0 to 100% - a negative value = implaus"
         },
         {
             "name": "omni_accel_x",
