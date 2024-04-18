@@ -39,7 +39,7 @@ jobs:
           git status 
           rm -rf ./dbc-output
           mkdir dbc-output
-          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_ev_can Orion RMS_PM Megasquirt
+          python json_to_dbc.py can_descriptor.json ./dbc-output/ksu_ev_can Orion RMS_PM
           
       - name: Publish EV DBC file
         uses: actions/upload-artifact@v2
