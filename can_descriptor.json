@@ -771,52 +771,28 @@
                 "cornernode_rr"
             ]
         },
-        "cornernode_fl_brakepressure": {
+        "cornernode_front_brakepressure": {
             "id": 912,
             "length": 2,
             "signals": [
-                "cornernode_fl_brakepressure"
+                "cornernode_front_brakepressure"
             ],
-            "comment": "front left corner node brakepressure data",
+            "comment": "front brakepressure data",
             "bus_name": "daq",
             "senders": [
                 "cornernode_fl"
             ]
         },
-        "cornernode_fr_brakepressure": {
+        "cornernode_rear_brakepressure": {
             "id": 913,
             "length": 2,
             "signals": [
-                "cornernode_fr_brakepressure"
+                "cornernode_rear_brakepressure"
             ],
             "comment": "front right corner node brakepressure data",
             "bus_name": "daq",
             "senders": [
                 "cornernode_fr"
-            ]
-        },
-        "cornernode_rl_brakepressure": {
-            "id": 914,
-            "length": 2,
-            "signals": [
-                "cornernode_rl_brakepressure"
-            ],
-            "comment": "rear left corner node brakepressure data",
-            "bus_name": "daq",
-            "senders": [
-                "cornernode_rl"
-            ]
-        },
-        "cornernode_rr_brakepressure": {
-            "id": 915,
-            "length": 2,
-            "signals": [
-                "cornernode_rr_brakepressure"
-            ],
-            "comment": "rear right corner node brakepressure data",
-            "bus_name": "daq",
-            "senders": [
-                "cornernode_rr"
             ]
         }
     },
@@ -3502,12 +3478,12 @@
             "length": 64
         },
         {
-            "name": "cornernode_fl_brakepressure",
+            "name": "cornernode_front_brakepressure",
             "start": 0,
             "length": 16
         },
         {
-            "name": "cornernode_fr_brakepressure",
+            "name": "cornernode_rear_brakepressure",
             "start": 0,
             "length": 16
         },
